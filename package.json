@@ -1,0 +1,26 @@
+{
+  "name": "outerspacex",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "test:unit": "vitest --environment jsdom"
+  },
+  "dependencies": {
+    "firebase": "^9.8.1",
+    "pinia": "^2.0.13",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/test-utils": "^2.0.0-rc.20",
+    "autoprefixer": "^10.4.7",
+    "jsdom": "^19.0.0",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.5",
+    "vitest": "^0.9.3"
+  }
+}
