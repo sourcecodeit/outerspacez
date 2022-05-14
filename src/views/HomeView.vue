@@ -7,7 +7,7 @@ const gameStore = useGameStore();
 
 <template>
   <screen-view class="start">
-    <h1 class="text-white text-2xl h-20 justify-center flex items-center">Outer Space Z</h1>
+    <h1 class="text-white text-2xl h-20 justify-center flex items-center">Outer Space X</h1>
     <div class="grow"></div>
     <div>
       <router-link 

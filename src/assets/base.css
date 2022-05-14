@@ -25,6 +25,8 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --vc-nav-width: 50px !important;
 }
 
 /* semantic color variables for this project */
@@ -37,7 +39,7 @@
   --color-border-hover: var(--vt-c-divider-light-1);
 
   --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-white);
 
   --section-gap: 160px;
 }
@@ -52,7 +54,7 @@
     --color-border-hover: var(--vt-c-divider-dark-1);
 
     --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    --color-text: var(--vt-c-white);
   }
 }
 
@@ -66,6 +68,7 @@
 }
 body {
   min-height: 100vh;
+  overflow: hidden;
   color: var(--color-text);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
@@ -109,4 +112,12 @@ input[type=text] {
   font-family: 'Syne Mono', monospace;
   color: #fff;
   font-size: 20px;
+}
+.carousel__next {
+  right: 20px !important;
+  background-color: transparent !important;
+}
+.carousel__prev {
+  left: 20px !important;
+  background-color: transparent !important;
 }

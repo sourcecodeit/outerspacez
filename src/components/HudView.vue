@@ -6,7 +6,10 @@ import { ref, onMounted } from 'vue'
 const hud = ref(null)
 
 onMounted(() => {
-  hud.value.style.height = `${hud.value.clientWidth}px`;
+    window.onresize = function () {
+        hud.value.style.height = `${hud.value.clientWidth}px`;
+    }
+    hud.value.style.height = `${hud.value.clientWidth}px`;
 })
 </script>
 <template>
@@ -24,11 +27,11 @@ onMounted(() => {
         width: 100%;
     }
     .hud1 {
-        animation: fade1 4s linear infinite alternate, rotation 300s infinite linear;
+        animation: fade1 4s linear infinite alternate, rotation 30s infinite linear;
     }
     .hud2 {
         opacity: 0;
-        animation: fade2 4s linear infinite alternate, rotation 300s infinite reverse linear;
+        animation: fade2 4s linear infinite alternate, rotation 100s infinite reverse linear;
     }
 
     @keyframes fade1 {
@@ -42,5 +45,9 @@ onMounted(() => {
     @keyframes rotation {
         from { transform: rotate(0); }
         to { transform: rotate(360deg); }
+    }
+    @keyframes zoom {
+        from { transform: scale(1); }
+        to { transform: scale(10); }
     }
 </style>
