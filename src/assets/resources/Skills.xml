@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<skills>
+    <skill code="fuel_eff" requires="" category="engineering" name="Fuel efficiency" column="0" image="Tex_skill_15">
+        <level id="1">
+            <FUEL_EFF>5</FUEL_EFF>
+        </level>
+        <level id="2">
+            <FUEL_EFF>10</FUEL_EFF>
+        </level>
+        <level id="3">
+            <FUEL_EFF>20</FUEL_EFF>
+        </level>
+    </skill>
+    <skill code="plasma_eng" requires="fuel_eff" category="engineering" name="Plasma engines" column="0" image="Tex_skill_05">
+        <level id="1">
+            <PLASMA_ENG>1</PLASMA_ENG>
+        </level>
+        <level id="2">
+            <PLASMA_ENG>2</PLASMA_ENG>
+        </level>
+        <level id="3">
+            <PLASMA_ENG>3</PLASMA_ENG>
+        </level>        
+    </skill>
+    <skill code="neutrino_eng" requires="plasma_eng" category="engineering" name="Neutrino engines" column="0" image="Tex_skill_14">
+        <level id="1">
+            <NEUTRINO_ENG>1</NEUTRINO_ENG>
+        </level>
+        <level id="2">
+            <NEUTRINO_ENG>2</NEUTRINO_ENG>
+        </level>
+        <level id="3">
+            <NEUTRINO_ENG>3</NEUTRINO_ENG>
+        </level>        
+    </skill>
+    <skill code="armor" requires="" category="engineering" name="Armor layering" column="2" image="Tex_skill_49">
+        <level id="1">
+            <ARMOR>1</ARMOR>
+        </level>
+        <level id="2">
+            <ARMOR>2</ARMOR>
+        </level>
+        <level id="3">
+            <ARMOR>3</ARMOR>
+        </level>        
+    </skill>
+    <skill code="rep_drones" requires="armor" category="engineering" name="Repairing drones" column="2" image="Tex_skill_25">
+        <level id="1">
+            <REP_DRONES>1</REP_DRONES>
+        </level>
+        <level id="2">
+            <REP_DRONES>2</REP_DRONES>
+        </level>
+        <level id="3">
+            <REP_DRONES>3</REP_DRONES>
+        </level>        
+    </skill>
+    <skill code="circuits_salvage" requires="" category="engineering" name="Circuits salvage" column="1" image="Tex_skill_17">
+        <level id="1">
+            <CIRCUIT_SALVAGE>1</CIRCUIT_SALVAGE>
+        </level>
+        <level id="2">
+            <CIRCUIT_SALVAGE>2</CIRCUIT_SALVAGE>
+        </level>
+        <level id="3">
+            <CIRCUIT_SALVAGE>3</CIRCUIT_SALVAGE>
+        </level>        
+    </skill>
+    <skill code="neural_impl" requires="" category="hacking" name="Neural implants" column="0" image="Tex_skill_01">
+        <level id="1">
+            <NEURAL_IMPLANTS>1</NEURAL_IMPLANTS>
+        </level>
+        <level id="2">
+            <NEURAL_IMPLANTS>2</NEURAL_IMPLANTS>
+        </level>
+        <level id="3">
+            <NEURAL_IMPLANTS>3</NEURAL_IMPLANTS>
+        </level>        
+    </skill>
+    <skill code="eugenic" requires="neural_impl" category="hacking" name="Eugenic" column="0" image="Tex_skill_19">
+        <level id="1">
+            <EUGENIC>2</EUGENIC>
+        </level>
+        <level id="2">
+            <EUGENIC>5</EUGENIC>
+        </level>
+        <level id="3">
+            <EUGENIC>10</EUGENIC>
+        </level>        
+    </skill>
+    <skill code="jamming" requires="" category="hacking" name="Jamming systems" column="1" image="Tex_skill_05">
+        <level id="1">
+            <JAMMING>1</JAMMING>
+        </level>
+        <level id="2">
+            <JAMMING>2</JAMMING>
+        </level>
+        <level id="3">
+            <JAMMING>3</JAMMING>
+        </level>        
+    </skill>
+    <skill code="sabotage" requires="jamming" category="hacking" name="Sabotage systems" column="1" image="Tex_skill_07">
+        <level id="1">
+            <SABOTAGE>1</SABOTAGE>
+        </level>
+        <level id="2">
+            <SABOTAGE>2</SABOTAGE>
+        </level>
+        <level id="3">
+            <SABOTAGE>3</SABOTAGE>
+        </level>        
+    </skill>
+    <skill code="radar" requires="" category="hacking" name="Enhanced radar" column="2" image="Tex_skill_58">
+        <level id="1">
+            <RADAR>1</RADAR>
+        </level>
+        <level id="2">
+            <RADAR>2</RADAR>
+        </level>
+        <level id="3">
+            <RADAR>3</RADAR>
+        </level>        
+    </skill>
+    <skill code="cloaking" requires="" category="hacking" name="Cloaking" column="2" image="Tex_skill_23">
+        <level id="1">
+            <RADAR>1</RADAR>
+        </level>
+        <level id="2">
+            <RADAR>2</RADAR>
+        </level>
+        <level id="3">
+            <RADAR>3</RADAR>
+        </level>        
+    </skill>
+    <skill code="double_hit" requires="" category="combat" name="Double hit" column="0" image="Tex_skill_44_2">
+        <level id="1">
+            <DOUBLE_HIT>5</DOUBLE_HIT>
+        </level>
+        <level id="2">
+            <DOUBLE_HIT>10</DOUBLE_HIT>
+        </level>
+        <level id="3">
+            <DOUBLE_HIT>20</DOUBLE_HIT>
+        </level>        
+    </skill>
+    <skill code="triple_hit" requires="double_hit" category="combat" name="Triple hit" column="0" image="Tex_skill_44">
+        <level id="1">
+            <DOUBLE_HIT>5</DOUBLE_HIT>
+        </level>
+        <level id="2">
+            <DOUBLE_HIT>10</DOUBLE_HIT>
+        </level>
+        <level id="3">
+            <DOUBLE_HIT>20</DOUBLE_HIT>
+        </level>        
+    </skill>
+    <skill code="dodge" requires="" category="combat" name="Dodge" column="1" image="Tex_skill_104">
+        <level id="1">
+            <DODGE>5</DODGE>
+        </level>
+        <level id="2">
+            <DODGE>10</DODGE>
+        </level>
+        <level id="3">
+            <DODGE>20</DODGE>
+        </level>        
+    </skill>
+    <skill code="combat_drones" requires="" category="combat" name="Combat drones" column="1" image="Tex_skill_22">
+        <level id="1">
+            <COMBAT_DRONES>1</COMBAT_DRONES>
+        </level>
+        <level id="2">
+            <COMBAT_DRONES>2</COMBAT_DRONES>
+        </level>
+        <level id="3">
+            <COMBAT_DRONES>3</COMBAT_DRONES>
+        </level>        
+    </skill>
+    <skill code="enhanced_aim" requires="" category="combat" name="Enhanced aim" column="2" image="Tex_skill_13">
+        <level id="1">
+            <ENHANCED_AIM>5</ENHANCED_AIM>
+        </level>
+        <level id="2">
+            <ENHANCED_AIM>10</ENHANCED_AIM>
+        </level>
+        <level id="3">
+            <ENHANCED_AIM>20</ENHANCED_AIM>
+        </level>        
+    </skill>
+    <skill code="discount" requires="" category="trading" name="Discount" column="0" image="Tex_skill_89">
+        <level id="1">
+            <TRADE_DISCOUNT>5</TRADE_DISCOUNT>
+        </level>
+        <level id="2">
+            <TRADE_DISCOUNT>10</TRADE_DISCOUNT>
+        </level>
+        <level id="3">
+            <TRADE_DISCOUNT>15</TRADE_DISCOUNT>
+        </level>
+    </skill>
+    <skill code="extra_charge" requires="" category="trading" name="Extra charge" column="1" image="Tex_skill_89">
+        <level id="1">
+            <TRADE_EXTRACHARGE>5</TRADE_EXTRACHARGE>
+        </level>
+        <level id="2">
+            <TRADE_EXTRACHARGE>10</TRADE_EXTRACHARGE>
+        </level>
+        <level id="3">
+            <TRADE_EXTRACHARGE>15</TRADE_EXTRACHARGE>
+        </level>
+    </skill>
+</skills>

@@ -5,7 +5,7 @@ export const useGameStore = defineStore({
   state: () => ({
     savedGames: [],
     player: {
-        name: null,
+        nickName: null,
 
     }
   }),

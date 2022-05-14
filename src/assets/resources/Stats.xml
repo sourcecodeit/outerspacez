@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<stats>
+    <stat code="AGI" name="Agility" description="+{value} AGI"></stat>
+    <stat code="DEF" name="Defense" description="+{value} DEF"></stat>
+    <stat code="DEX" name="Dexterity" description="+{value} DEX"></stat>
+    <stat code="INT" name="Intelligence" description="+{value} INT"></stat>
+    <stat code="LUK" name="Luck" description="+{value} LUK"></stat>
+    <stat code="STR" name="Strength" description="+{value} STR"></stat>
+    
+    <stat code="LASER" name="Laser weapons" description="Learn use of laser weapons"></stat>
+    
+    <!-- BEGIN engineering -->
+    <stat code="FUEL_EFF" name="Fuel efficiency" description="Minor fuel consumption"></stat>
+    <stat code="PLASMA_ENG" name="Plasma engines" description="Learn how to install plasma engines of level {value}"></stat>
+    <stat code="NEUTRINO_ENG" name="Neutrino engines" description="Learn how to install neutrino engines of level {value}"></stat>
+    
+    <stat code="ARMOR" name="Armor layering" description="Enable installing armor plates of level {value}"></stat>
+    <stat code="REP_DRONES" name="Repairing drones" description="Learn use of {value} repairing drones"></stat>
+    <stat code="CIRCUIT_SALVAGE" name="Circuits salvage" description="Identify valuable circuits in loot"></stat>
+    <!-- END engineering -->
+    
+    <!-- BEGIN hacking -->
+    <stat code="NEURAL_IMPLANTS" name="Neural implants" description="Enable use of neural implants"></stat>
+    <stat code="EUGENIC" name="Eugenic" description="All stats +{value}"></stat>
+    <stat code="JAMMING" name="Jamming" description="Enable use of electronic jamming devices of level {value}"></stat>
+    <stat code="SABOTAGE" name="Sabotage" description="Enable use of sabotage devices of level {value}"></stat>
+    <stat code="RADAR" name="Enhnced radar" description="Improve ship identification"></stat>
+    <stat code="CLOAKING" name="Cloaking" description="Hide your ship from radars"></stat>    
+    <!-- END hacking -->
+    
+    <!-- BEGIN combat -->
+    <stat code="DOUBLE_HIT" name="Double hit" description="{value}% chance of getting a double hit with the weakest weapon"></stat>
+    <stat code="TRIPLE_HIT" name="Triple hit" description="{value}% chance of getting a triple hit with the weakest weapon"></stat>
+    <stat code="DODGE" name="Dodge" description="Dodge rate +{value}% "></stat>
+    <stat code="COMBAT_DRONES" name="Combat drones" description="Learn use of {value} combat drones"></stat>
+    <stat code="ENHANCED_AIM" name="Enhanced aim" description="Increase hit rate by +{value}%"></stat>
+    <!-- END combat -->
+    
+    <!-- BEGIN trading -->
+    <stat code="TRADE_DISCOUNT" name="Discount" description="Get {value}% discounts when buying items"></stat>
+    <stat code="TRADE_EXTRACHARGE" name="Extra charge" description="Add {value}% extra charge when selling items"></stat>
+    <!-- END trading -->
+    
+    <stat code="MISSILES" name="Missile weapons" description="Learn use of missile weapons"></stat>    
+</stats>

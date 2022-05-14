@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<categories>
+	<category id="1" image="weapons" position="4" market="True" equipment="True">
+		<name>Ship modules</name>
+		<subcategories>
+			<sub id="1">			
+				<name>Weapons</name>
+			</sub>
+			<sub id="2">			
+				<name>Defense</name>
+			</sub>
+			<sub id="3">			
+				<name>Cargo</name>
+			</sub>
+			<sub id="4">
+				<name>Electronic warfare</name>
+			</sub>
+		</subcategories>
+	</category>
+	<category id="2" image="weapons" position="3" market="True" equipment="False" economy="Industrial">
+		<name>Weapons</name>
+	</category>
+	<category id="3" image="food" position="0" market="True" equipment="False" economy="Agricultural">
+		<name>Food</name>
+	</category>
+	<category id="4" image="hardware" position="1" market="True" equipment="False" economy="HiTech">
+		<name>Hardware</name>
+	</category>
+	<category id="5" image="ores" position="2" market="True" equipment="False" economy="Industrial">
+		<name>Ores</name>
+	</category>
+</categories>

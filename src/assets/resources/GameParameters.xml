@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<parameters>
+	<parameter name="FleeChance">300</parameter>
+	<parameter name="MaxAttackHandicap">0.2</parameter>
+	<parameter name="MaxAttackBonus">0.1</parameter>
+	<parameter name="FleeChance">300</parameter>
+	<parameter name="EnemyAttackMultiplier">1.05</parameter>
+	<parameter name="EnemyDefenseMultiplier">1</parameter>
+	<parameter name="EscapeRateSuccess">0.5|0.4|0.3|0.25</parameter>
+	<parameter name="SubmitMaxAmount">250|300|450</parameter>
+	<parameter name="HullUnitCost">20</parameter>
+	<parameter name="LevelPoints">100|250|450|750|1300|2000</parameter>
+	<parameter name="NewLevelStatsPoints">6</parameter>
+    <parameter name="FuelConsuption">50</parameter>
+    <parameter name="FuelCapacity">1000</parameter>
+    <parameter name="FuelCost">0.2</parameter>
+    <parameter name="Availability_VERY_HIGH">95</parameter>
+    <parameter name="Availability_HIGH">65</parameter>
+    <parameter name="Availability_GOOD">50</parameter>
+    <parameter name="Availability_LOW">30</parameter>
+    <parameter name="Availability_VERY_LOW">20</parameter>
+    <parameter name="Availability_RARE">10</parameter>
+    <parameter name="Availability_VERY_HIGH_QTY">30</parameter>
+    <parameter name="Availability_HIGH_QTY">20</parameter>
+    <parameter name="Availability_GOOD_QTY">15</parameter>
+    <parameter name="Availability_LOW_QTY">10</parameter>
+    <parameter name="Availability_VERY_LOW_QTY">5</parameter>
+    <parameter name="Availability_RARE_QTY">2</parameter>
+    <parameter name="StatsStartingPoints">24</parameter>
+    <parameter name="StatsPointsPerLevel">6</parameter>
+</parameters>

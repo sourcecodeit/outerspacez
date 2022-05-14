@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import './index.css'
+import startMusic from '@/assets/audio/start.wav';
 
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
@@ -19,6 +20,9 @@ import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
+
+// var audio = new Audio(startMusic);
+// audio.play();
 
 app.use(createPinia())
 app.use(router)

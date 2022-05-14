@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+  	<item code="cannon_10" categoryId="1" subCategoryId="1" image="cannon_10">
+		<name>Cannon 10mm</name>
+		<atk>5</atk>
+        <price>500</price>
+        <description>Attack module</description>
+	</item>
+	<item code="cannon_20" categoryId="1" subCategoryId="1" image="cannon_20">
+		<name>Cannon 20mm</name>
+		<atk>10</atk>
+        <price>2000</price>
+        <description>Attack module</description>
+	</item>
+	<item code="cannon_50" categoryId="1" subCategoryId="1" image="cannon_50">
+		<name>Cannon 50mm</name>
+		<atk>20</atk>
+        <price>4000</price>
+        <description>Attack module</description>
+	</item>
+	<item code="cannon_80" categoryId="1" subCategoryId="1" image="cannon_80">
+		<name>Cannon 80mm</name>
+		<atk>40</atk>
+        <price>6000</price>
+        <description>Attack module</description>
+	</item>
+	<item code="cannon_100" categoryId="1" subCategoryId="1" image="cannon_100">
+		<name>Cannon 100mm</name>
+		<atk>60</atk>
+        <price>10000</price>
+        <description>Attack module</description>
+	</item>
+	<item code="shield_i" categoryId="1" subCategoryId="2" image="shield_1">
+		<name>Armor hardener I</name>
+		<def>10</def>
+        <price>1500</price>
+        <description>Defense module</description>
+	</item>
+	<item code="shield_ii" categoryId="1" subCategoryId="2" image="shield_2">
+		<name>Armor hardener II</name>
+		<def>30</def>
+        <price>2400</price>
+        <description>Defense module</description>
+	</item>
+	<item code="shield_iii" categoryId="1" subCategoryId="2" image="shield_3">
+		<name>Armor hardener III</name>
+		<def>50</def>
+        <price>6000</price>
+        <description>Defense module</description>
+	</item>
+    <item code="shield_iv" categoryId="1" subCategoryId="2" image="shield_4">
+        <name>Armor hardener IV</name>
+        <def>80</def>
+        <price>10000</price>
+        <description>Defense module</description>
+    </item>
+    <item code="shield_v" categoryId="1" subCategoryId="2" image="shield_5">
+        <name>Armor hardener V</name>
+        <def>100</def>
+        <price>12000</price>
+        <description>Defense module</description>
+    </item>
+	<item code="jammer_i" categoryId="1" subCategoryId="4" image="jammer_1">
+		<name>Electronic Jammer I</name>
+		<cloaking>10</cloaking>
+        <price>1000</price>
+        <description>Defense module, it jams radio signals</description>
+	</item>
+    <item code="jammer_ii" categoryId="1" subCategoryId="4" image="jammer_2">
+        <name>Electronic Jammer II</name>
+        <cloaking>20</cloaking>
+        <price>1000</price>
+        <description>Defense module, it jams radio signals</description>
+    </item>
+    <item code="jammer_iii" categoryId="1" subCategoryId="4" image="jammer_3">
+        <name>Electronic Jammer III</name>
+        <cloaking>50</cloaking>
+        <price>5000</price>
+        <description>Defense module, it jams radio signals</description>
+    </item>
+    <item code="jammer_iv" categoryId="1" subCategoryId="4" image="jammer_4">
+        <name>Electronic Jammer IV</name>
+        <cloaking>100</cloaking>
+        <price>10000</price>
+        <description>Defense module, it jams radio signals</description>
+    </item>
+    <item code="jammer_v" categoryId="1" subCategoryId="4" image="jammer_5">
+        <name>Electronic Jammer V</name>
+        <cloaking>200</cloaking>
+        <price>17000</price>
+        <description>Defense module, it jams radio signals</description>
+    </item>
+	<!--<item code="flare_i" categoryId="1" subCategoryId="4">
+		<name>Flare I</name>
+		<agility>10</agility>
+        <price>500</price>
+        <description>Defense module, it jams radio signals</description>
+	</item>-->
+
+	<!-- FOOD -->
+    <item code="bread" categoryId="3">
+        <name>Bread</name>
+        <price>20</price>
+        <volume>2</volume>
+        <availability>HIGH</availability>
+        <description>Tasteful bread</description>
+    </item>
+    <item code="water" categoryId="3">
+        <name>Water</name>
+        <price>10</price>
+        <volume>5</volume>
+        <availability>VERY_HIGH</availability>
+        <description>Drinkable water</description>
+    </item>
+	<!-- <item code="fruit" categoryId="3">
+		<name>Fruit</name>
+		<price>5</price>
+        <volume>1</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="vegetables" categoryId="3">
+		<name>Vegetables</name>
+		<price>5</price>
+        <volume>1</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="steak" categoryId="3">
+		<name>Steak</name>
+		<price>15</price>
+        <volume>1</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="pie" categoryId="3">
+		<name>Pie</name>
+		<price>7</price>
+        <volume>1</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="stew" categoryId="3">
+		<name>Stew</name>
+		<price>8</price>
+        <volume>1</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="wine" categoryId="3">
+		<name>Wine</name>
+		<price>28</price>
+        <volume>1</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="biscuits" categoryId="3">
+		<name>Biscuits</name>
+		<price>6</price>
+        <volume>1</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="chips" categoryId="3">
+		<name>Chips</name>
+		<price>3</price>
+        <volume>1</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="bread" categoryId="3">
+		<name>Bread</name>
+		<price>2</price>
+        <volume>1</volume>
+        <availability>VERY_HIGH</availability>
+	</item>
+	<item code="sandwich" categoryId="3">
+		<name>Sandwich</name>
+		<price>4</price>
+        <volume>1</volume>
+        <availability>GOOD</availability>
+	</item>-->
+
+    <item code="copper" categoryId="5">
+        <name>Copper</name>
+        <price>50</price>
+        <volume>5</volume>
+        <availability>GOOD</availability>
+    </item>
+    <item code="gold" categoryId="5">
+        <name>Gold</name>
+        <price>500</price>
+        <volume>5</volume>
+        <availability>VERY_LOW</availability>
+    </item>
+    <item code="iridium" categoryId="5">
+        <name>Iridium</name>
+        <price>100</price>
+        <volume>5</volume>
+        <availability>LOW</availability>
+    </item>
+    <item code="uranium" categoryId="5">
+        <name>Uranium</name>
+        <price>600</price>
+        <volume>5</volume>
+        <availability>RARE</availability>
+    </item>
+    <item code="plutonium" categoryId="5">
+        <name>Plutonium</name>
+        <price>800</price>
+        <volume>5</volume>
+        <availability>RARE</availability>
+    </item>
+
+	<!-- <item code="copper" categoryId="5">
+		<name>Copper</name>
+		<price>11</price>
+        <volume>5</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="silver" categoryId="5">
+		<name>Silver</name>
+		<price>25</price>
+        <volume>5</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="gold" categoryId="5">
+		<name>Gold</name>
+		<price>80</price>
+        <volume>5</volume>
+        <availability>VERY_LOW</availability>
+	</item>
+	<item code="iron" categoryId="5">
+		<name>Iron</name>
+		<price>21</price>
+        <volume>5</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="tantalum" categoryId="5">
+		<name>Tantalum</name>
+		<price>45</price>
+        <volume>5</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="iridium" categoryId="5">
+		<name>Iridium</name>
+		<price>50</price>
+        <volume>5</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="platinum" categoryId="5">
+		<name>Platinum</name>
+		<price>98</price>
+        <volume>5</volume>
+        <availability>VERY_LOW</availability>
+	</item>
+	<item code="uranium" categoryId="5">
+		<name>Uranium</name>
+		<price>120</price>
+        <volume>5</volume>
+        <availability>RARE</availability>
+	</item>
+	<item code="plutonium" categoryId="5">
+		<name>Plutonium</name>
+		<price>130</price>
+        <volume>5</volume>
+        <availability>RARE</availability>
+	</item>
+	<item code="tungsten" categoryId="5">
+		<name>Tungsten</name>
+		<price>75</price>
+        <volume>5</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="osmium" categoryId="5">
+		<name>Osmium</name>
+		<price>150</price>
+        <volume>5</volume>
+        <availability>RARE</availability>
+	</item>
+	<item code="ytterbium" categoryId="5">
+		<name>Ytterbium</name>
+		<price>200</price>
+        <volume>5</volume>
+        <availability>RARE</availability>
+	</item>-->
+
+    <item code="weapons" categoryId="2">
+        <name>Weapons</name>
+        <price>200</price>
+        <volume>10</volume>
+        <availability>LOW</availability>
+        <description>Weapons for self security</description>
+    </item>
+
+	<!--- weapons 
+	<item code="gun" categoryId="2">
+		<name>Gun</name>
+		<price>120</price>
+        <volume>3</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="revolver" categoryId="2">
+		<name>Revolver</name>
+		<price>80</price>
+        <volume>3</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="machine_gun" categoryId="2">
+		<name>Machine gun</name>
+		<price>500</price>
+        <volume>10</volume>
+        <availability>RARE</availability>
+	</item>
+	<item code="knife" categoryId="2">
+		<name>Knife</name>
+		<price>45</price>
+        <volume>2</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="taser" categoryId="2">
+		<name>Taser</name>
+		<price>150</price>
+        <volume>3</volume>
+        <availability>LOW</availability>
+	</item>
+	<item code="whip" categoryId="2">
+		<name>Whip</name>
+		<price>80</price>
+        <volume>4</volume>
+        <availability>GOOD</availability>
+	</item>-->
+
+    <item code="electronic-hardware" categoryId="4">
+        <name>Electronic hardware</name>
+        <price>100</price>
+        <volume>10</volume>
+        <availability>VERY_HIGH</availability>
+        <description></description>
+    </item>
+    
+	<!--- hardware 
+	<item code="screws" categoryId="4">
+		<name>Screws</name>
+		<price>5</price>
+        <volume>1</volume>
+        <availability>VERY_HIGH</availability>
+	</item>
+	<item code="bolt" categoryId="4">
+		<name>Bolt</name>
+		<price>7</price>
+        <volume>2</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="screwdriver" categoryId="4">
+		<name>Screwdriver</name>
+		<price>10</price>
+        <volume>2</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="pliers" categoryId="4">
+		<name>Pliers</name>
+		<price>12</price>
+        <volume>2</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="pincers" categoryId="4">
+		<name>Pincers</name>
+		<price>12</price>
+        <availability>GOOD</availability>
+	</item>
+	<item code="nails" categoryId="4">
+		<name>Nails</name>
+		<price>5</price>
+        <volume>2</volume>
+        <availability>VERY_HIGH</availability>
+	</item>
+	<item code="wires" categoryId="4">
+		<name>Wires</name>
+		<price>8</price>
+        <volume>4</volume>
+        <availability>HIGH</availability>
+	</item>
+	<item code="hammer" categoryId="4">
+		<name>Hammer</name>
+		<price>10</price>
+        <volume>3</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="solder" categoryId="4">
+		<name>Solder</name>
+		<price>20</price>
+        <volume>5</volume>
+        <availability>GOOD</availability>
+	</item>
+	<item code="tin" categoryId="4">
+		<name>Tin</name>
+		<price>8</price>
+        <volume>2</volume>
+        <availability>HIGH</availability>
+	</item>
+    -->
+</items>

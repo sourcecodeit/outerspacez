@@ -1,5 +1,9 @@
-/* color palette from <https://github.com/vuejs/theme> */
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Syne+Mono&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --vt-c-white: #ffffff;
@@ -74,9 +78,10 @@ body {
 }
 h1, h2, h3, .btn, label {
   font-family: 'Audiowide', cursive;
-}
-h1, h2, h3 {
   text-transform: uppercase;
+}
+label {
+  font-size: 11px;
 }
 .btn {
   background: url('@/assets/button-bg.png') 50% 50% no-repeat;
@@ -98,6 +103,10 @@ label {
 }
 input[type=text] {
   background-color: rgba(0, 0, 0, .2);
-  border:1px #fff solid;
-  padding: 10px;
+  border:1px rgba(255, 255, 255, .3) solid;
+  padding: 4px 10px;
+  margin: 4px 0;
+  font-family: 'Syne Mono', monospace;
+  color: #fff;
+  font-size: 20px;
 }

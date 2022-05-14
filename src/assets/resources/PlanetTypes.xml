@@ -1,0 +1,7 @@
+﻿<planet-types>
+    <planet-type tech-level="Agricultural">
+        <market>
+            <category></category>
+        </market>
+    </planet-type>
+</planet-types>
