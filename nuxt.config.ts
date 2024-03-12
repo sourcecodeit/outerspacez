@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       script: [
-        { src: '/particles.min.js' }
+        { src: '/particles.min.js' },
+        { src: '/warp.min.js' }
       ]
     }
   },

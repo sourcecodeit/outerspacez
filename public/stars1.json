@@ -30,13 +30,13 @@
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 1,
+        "speed": 2,
         "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 6,
       "random": true,
       "anim": {
         "enable": false,
@@ -46,7 +46,7 @@
       }
     },
     "line_linked": {
-      "enable": false,
+      "enable": true,
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,

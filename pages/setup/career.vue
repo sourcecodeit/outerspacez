@@ -1,6 +1,7 @@
 <template>
 	<NuxtLayout name="screen" title="Career" back="/setup/nickname" next="/">
 		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-20"></div>
+		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full py-10">
 			<div class="opacity-70">{{ nickname }}</div>
 			<UiCol class="items-center relative h-[320px] overflow-hidden">
@@ -23,7 +24,6 @@
 </template>
 <script setup>
 import { useStorage } from '@vueuse/core'
-
 const nickname = useStorage('nickname')
 const index = useStorage('face', () => 1)
 
@@ -31,6 +31,8 @@ onMounted(() => {
 	particlesJS.load('particles-js', '/stars1.json', function () {
 		console.log('callback - particles.js config loaded');
 	});	
+
+	// new WarpSpeed('warp', { "speed": 20, "speedAdjFactor": 0.01, "density": 2, "shape": "square", "warpEffect": true, "warpEffectLength": 5, "depthFade": true, "starSize": 5, "backgroundColor": "hsl(263,45%,0%)", "starColor": "#FFFFFF" })
 })
 
 const count = 30
