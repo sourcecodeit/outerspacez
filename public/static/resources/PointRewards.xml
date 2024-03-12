@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<rewards>
-	<reward code="wun_battle" multiplier="85"></reward>
-	<reward code="new_planet" multiplier="1">32</reward>
-	<reward code="new_planetary_system" multiplier="1">110</reward>
-	<reward code="new_galaxy" multiplier="1">320</reward>
-	<reward code="fair_trade" multiplier="5"></reward>
-</rewards>
