@@ -23,6 +23,7 @@
     "maz-ui": "^3.34.0",
     "nuxt": "^3.10.3",
     "particles.js": "^2.0.0",
+    "unique-names-generator": "^4.7.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

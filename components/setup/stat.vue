@@ -7,7 +7,7 @@
     </div>-->
     <div class="py-4">
       <!-- <MazSlider v-model="model" :min="0" :max="10" />-->
-      <MazInputNumber v-model="model" placeholder="Enter number" :min="0" :max="max" size="md"
+      <MazInputNumber v-model="model" placeholder="Enter number" :min="0" :max="max" size="sm"
       class="w-full"
         />
     </div>
