@@ -66,7 +66,7 @@ onMounted(() => {
 	// new WarpSpeed('warp', { "speed": 20, "speedAdjFactor": 0.01, "density": 2, "shape": "square", "warpEffect": true, "warpEffectLength": 5, "depthFade": true, "starSize": 5, "backgroundColor": "hsl(263,45%,0%)", "starColor": "#FFFFFF" })
 })
 
-const count = 18
+const count = 29
 
 function next() {
 	index.value = (index.value + 1) % (count + 1) || 1
