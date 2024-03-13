@@ -14,7 +14,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
-    'maz-ui/nuxt'
+    'maz-ui/nuxt',
+    'nuxt-icon'
   ],
   postcss: {
     plugins: {

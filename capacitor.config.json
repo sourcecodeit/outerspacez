@@ -1,0 +1,8 @@
+{
+  "appId": "nuxt.app",
+  "appName": "nuxt-app",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

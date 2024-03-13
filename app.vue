@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="app" :class="{
+		<div class="app overflow-hidden" :class="{
 	'hidden': !ready		
 	}">
 			<NuxtPage />
@@ -49,7 +49,7 @@ onMounted(async () => {
 </script>
 <style scoped>
 .app {
-		background-image: url('@/assets/bg/screen.jpg');
-		@apply bg-cover text-white text-center bg-center h-screen py-4;
+	background-image: url('@/assets/bg/screen.jpg');
+	@apply bg-cover text-white text-center bg-center h-screen;
 }
 </style>
