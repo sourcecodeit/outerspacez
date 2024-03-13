@@ -6,7 +6,7 @@
 			<div class="opacity-70">{{ nickname }}</div>
 			<UiCol class="items-center relative h-[320px] overflow-hidden">
 				<img src="@/assets/bg/hud-3.png" class="absolute w-[320px] z-0 opacity-20 animate-spin-slow" />
-				<UiRow class="top-[40px] relative">
+				<UiRow class="top-[40px] relative gap-4">
 					<img src="@/assets/ui/chevron.png" class="w-[20px] rotate-180" @click="prev" />
 					<Face :index="index" />
 					<img src="@/assets/ui/chevron.png" class="w-[20px]" @click="next" />
@@ -66,7 +66,7 @@ onMounted(() => {
 	// new WarpSpeed('warp', { "speed": 20, "speedAdjFactor": 0.01, "density": 2, "shape": "square", "warpEffect": true, "warpEffectLength": 5, "depthFade": true, "starSize": 5, "backgroundColor": "hsl(263,45%,0%)", "starColor": "#FFFFFF" })
 })
 
-const count = 30
+const count = 18
 
 function next() {
 	index.value = (index.value + 1) % (count + 1) || 1
