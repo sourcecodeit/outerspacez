@@ -8,7 +8,7 @@
 		<UiCol v-if="!ready" class="app w-screen h-screen justify-center">
 			<p class="mb-6">Loading...</p>
 			<div class="mx-10 h-[6px] bg-slate-800">
-				<div class="h-[6px] bg-cyan-400" :style="`width: ${c}%`"></div>
+				<div class="h-[6px] bg-cyan-400 transition-all" :style="`width: ${c}%`"></div>
 			</div>
 		</UiCol>
 	</div>
@@ -18,6 +18,7 @@ const ready = ref(false)
 const c = ref(0)
 
 const characters = 29;
+const ships = 17;
 
 const images = []
 
@@ -30,8 +31,12 @@ onMounted(async () => {
 		})		
 	}
 
-	for (let i = 1; i < characters; i++) { 
+	for (let i = 1; i <= characters; i++) { 
 		images.push(`/characters/${i}.png`)
+	}
+
+	for (let i = 1; i <= ships; i++) {
+		images.push(`/ships/${i}.png`)
 	}
 
 	for (let i = 0; i < images.length; i++) {
