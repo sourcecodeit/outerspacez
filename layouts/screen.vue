@@ -1,6 +1,6 @@
 <template>
 	<UiCol class="screen">
-		<UiRow class="mx-6 h-[50px]">
+		<UiRow class="mx-6 h-[50px] relative z-40">
 			<div class="w-[60px]">
 				<NuxtLink :href="back">
 					<div class="w-[60px]" v-if="back">

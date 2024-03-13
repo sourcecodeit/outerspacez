@@ -1,5 +1,5 @@
 <template>
-	<NuxtLayout name="screen" title="Career" back="/setup/nickname" next="/">
+	<NuxtLayout name="screen" title="Career" back="/setup/nickname" :next="nextPage">
 		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-20"></div>
 		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full py-10">
@@ -12,11 +12,12 @@
 					<img src="@/assets/ui/chevron.png" class="w-[20px]" @click="next" />
 				</UiRow>
 			</UiCol>
+			<p class="uppercase">Available points: {{ availablePoints }}</p>
 			<div class="grid grid-cols-2 gap-x-4 gap-y-8 mx-6">
-				<SetupStat title="Body strength" value="20" />
-				<SetupStat title="Intelligence" value="60" />
-				<SetupStat title="Knowledge" value="20" />
-				<SetupStat title="Multilingualism" value="20" />
+				<SetupStat title="Body strength" v-model="stats.str" :max="maxStr" />
+				<SetupStat title="Intelligence" v-model="stats.int" :max="maxInt" />
+				<SetupStat title="Knowledge" v-model="stats.knw" :max="maxKnw" />
+				<SetupStat title="Multilingualism" v-model="stats.lng" :max="maxLng" />
 			</div>
 		</UiCol>
 		<div></div>
@@ -26,6 +27,36 @@
 import { useStorage } from '@vueuse/core'
 const nickname = useStorage('nickname')
 const index = useStorage('face', () => 1)
+
+const stats = useStorage('stats', () => {
+	return {
+		str: 1,
+		int: 1, 
+		knw: 1,
+		lng: 1
+	}
+})
+
+const nextPage = computed(() => {
+	return availablePoints.value == 0 ? '/setup/ship' : null
+})
+
+const maxStr = computed(() => {
+	return stats.value.str + availablePoints.value
+})
+const maxInt = computed(() => {
+	return stats.value.int + availablePoints.value
+})
+const maxLng = computed(() => {
+	return stats.value.lng + availablePoints.value
+})
+const maxKnw = computed(() => {
+	return stats.value.knw + availablePoints.value
+})
+
+const availablePoints = computed(() => {
+	return 20 - stats.value.int - stats.value.knw - stats.value.lng - stats.value.str
+})
 
 onMounted(() => {
 	particlesJS.load('particles-js', '/stars1.json', function () {

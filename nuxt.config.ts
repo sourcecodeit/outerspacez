@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   css: ['~/assets/main.css'],
   app: {
     head: {
+      title: 'Outer Space Z',
       script: [
         { src: '/particles.min.js' },
         { src: '/warp.min.js' }
