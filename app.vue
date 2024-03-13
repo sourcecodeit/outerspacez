@@ -6,7 +6,7 @@
 			<NuxtPage />
 		</div>
 		<UiCol v-if="!ready" class="app w-screen h-screen justify-center">
-			<p class="mb-6">Loading...</p>
+			<p class="mb-6">Loading... {{ c }}%</p>
 			<div class="mx-10 h-[6px] bg-slate-800">
 				<div class="h-[6px] bg-cyan-400 transition-all" :style="`width: ${c}%`"></div>
 			</div>
@@ -41,7 +41,7 @@ onMounted(async () => {
 
 	for (let i = 0; i < images.length; i++) {
 		await loadImage(images[i])
-		c.value = i / images.length * 100
+		c.value = Math.round(i / images.length * 100)
 	}
 
 	ready.value = true
