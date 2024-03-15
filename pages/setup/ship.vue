@@ -17,7 +17,7 @@
 					</UiRow>
 				</UiRow>
 			</div>
-			<h2>{{ ships[index].name }}</h2>
+			<h2 class="text-3xl -mt-5">{{ ships[index].name }}</h2>
 			<UiCol class="border-t border-slate-800 border-b py-4 justify-around bg-black bg-opacity-15 gap-10">
 				<div class="grid grid-cols-2">
 					<div class="gap-2 justify-center flex items-center">
