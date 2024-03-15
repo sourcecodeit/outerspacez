@@ -18,30 +18,44 @@
 				</UiRow>
 			</div>
 			<h2>{{ ships[index].name }}</h2>
-			<UiRow class="border-t border-slate-800 border-b py-4 justify-around bg-black bg-opacity-15">
-				<UiCol class="gap-2">
-					<UiRow class="gap-2">
-						<img src="@/assets/ui/icon-agi.png" class="w-[20px]" />
-						<span class="text-xl">{{ agi }}</span>
-					</UiRow>
-					<h3 class="text-xs text-center text-cyan-300">Agility</h3>
-				</UiCol>
-				<UiCol class="gap-2">
-					<UiRow class="gap-2">
-						<img src="@/assets/ui/icon-hull.png" class="w-[20px]" />
-						<span class="text-xl">{{ hull }}</span>
-					</UiRow>
-					<h3 class="text-xs text-center text-cyan-300">Hull</h3>
-				</UiCol>
+			<UiCol class="border-t border-slate-800 border-b py-4 justify-around bg-black bg-opacity-15 gap-10">
+				<div class="grid grid-cols-2">
+					<div class="gap-2 justify-center flex items-center">
+						<img src="@/assets/ui/shield-slots.svg" class="w-[40px]" />
+						<h2 class="text-3xl">{{ shield_slots }}</h2>
+						<h3 class="text-xs opacity-80">Shield<br />slots</h3>
+					</div>
+					<div class="gap-2 justify-center flex items-center">
+						<img src="@/assets/ui/weapon-slots.svg" class="w-[30px]" />
+						<h2 class="text-3xl">{{ weapon_slots }}</h2>
+						<h3 class="text-xs opacity-80">Weapon<br />slots</h3>
+					</div>
+					</div>
+					<UiRow class="justify-around">
+						<UiCol class="gap-2">
+							<UiRow class="gap-2">
+								<img src="@/assets/ui/icon-agi.png" class="w-[20px]" />
+								<span class="text-xl">{{ agi }}</span>
+							</UiRow>
+							<h3 class="text-xs text-center text-cyan-300">Agility</h3>
+						</UiCol>
+						<UiCol class="gap-2">
+							<UiRow class="gap-2">
+								<img src="@/assets/ui/icon-hull.png" class="w-[20px]" />
+								<span class="text-xl">{{ hull }}</span>
+							</UiRow>
+							<h3 class="text-xs text-center text-cyan-300">Hull</h3>
+						</UiCol>
 
-				<UiCol class="gap-2">
-					<UiRow class="gap-2">
-						<img src="@/assets/ui/icon-cargo.png" class="w-[20px]" />
-						<span class="text-xl">{{ cargo }}</span>
+						<UiCol class="gap-2">
+							<UiRow class="gap-2">
+								<img src="@/assets/ui/icon-cargo.png" class="w-[20px]" />
+								<span class="text-xl">{{ cargo }}</span>
+							</UiRow>
+							<h3 class="text-xs text-center text-cyan-300">Cargo</h3>
+						</UiCol>
 					</UiRow>
-					<h3 class="text-xs text-center text-cyan-300">Cargo</h3>
-				</UiCol>
-			</UiRow>
+			</UiCol>
 		</UiCol>
 		<div></div>
 	</NuxtLayout>
@@ -84,5 +98,13 @@ const hull = computed(() => {
 
 const cargo = computed(() => {
 	return isLocked.value ? '?' : ships.value[index.value].cargo
+})
+
+const shield_slots = computed(() => {
+	return isLocked.value ? '?' : ships.value[index.value].shield_slots
+})
+
+const weapon_slots = computed(() => {
+	return isLocked.value ? '?' : ships.value[index.value].weapon_slots
 })
 </script>

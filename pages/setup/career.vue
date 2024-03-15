@@ -3,18 +3,16 @@
 		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-10"></div>
 		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full mx-6">
-			<div class="items-center relative">
+			<div class="items-center relative w-full">
 				<img src="@/assets/bg/hud-3.png" class="absolute z-0 opacity-20 animate-spin-slow" />
-				<UiRow class="gap-4">
-					<UiRow class="top-[40px] relative">
-						<MazBtn color="transparent" @click="prev" noPadding>
-							<Icon name="tabler:square-rounded-chevrons-left-filled" size="40" />
-						</MazBtn>
-						<SetupFace :index="index" />
-						<MazBtn color="transparent" @click="next" noPadding>
-							<Icon name="tabler:square-rounded-chevrons-right-filled" size="40" />
-						</MazBtn>
-					</UiRow>
+				<UiRow class="top-[50px] relative">
+					<MazBtn color="transparent" @click="prev" noPadding>
+						<Icon name="tabler:square-rounded-chevrons-left-filled" size="40" />
+					</MazBtn>
+					<SetupFace :index="index" />
+					<MazBtn color="transparent" @click="next" noPadding>
+						<Icon name="tabler:square-rounded-chevrons-right-filled" size="40" />
+					</MazBtn>
 				</UiRow>
 			</div>
 			<p class="uppercase">Available points: {{ availablePoints }}</p>
