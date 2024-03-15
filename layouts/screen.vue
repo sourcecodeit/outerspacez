@@ -33,7 +33,7 @@ useHead({
 </script>
 <style scoped>
 .screen {
-	background-image: url('@/assets/bg/screen.jpg');
+	background-image: url('@/assets/bg/screen2.jpg');
 	@apply bg-cover text-white text-center bg-center h-screen py-4;
 }
 </style>

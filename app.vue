@@ -49,7 +49,7 @@ onMounted(async () => {
 </script>
 <style scoped>
 .app {
-	background-image: url('@/assets/bg/screen.jpg');
+	background-image: url('@/assets/bg/screen2.jpg');
 	@apply bg-cover text-white text-center bg-center h-screen;
 }
 </style>

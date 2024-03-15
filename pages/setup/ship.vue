@@ -78,9 +78,11 @@ const isLocked = computed(() => {
 })
 
 function next() {
+	console.log(index.value, (index.value + 1) % ships.value.length)
 	index.value = (index.value + 1) % ships.value.length
 }
 function prev() {
+	console.log(index.value, (index.value + ships.value.length - 1) % ships.value.length)
 	index.value = (index.value + ships.value.length - 1) % ships.value.length
 }
 
