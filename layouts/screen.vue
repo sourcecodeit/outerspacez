@@ -2,11 +2,9 @@
 	<UiCol class="screen">
 		<UiRow class="mx-6 h-[50px] relative z-40">
 			<div class="w-[60px]">
-				<NuxtLink :href="back">
-					<div class="w-[60px]" v-if="back">
+				<MazBtn color="transparent" :to="back" noPadding v-if="back">
 						<img src="@/assets/ui/chevron.png" class="w-[10px] rotate-180" />
-					</div>
-				</NuxtLink>
+				</MazBtn>
 			</div>
 			<h2>
 				{{ title }}

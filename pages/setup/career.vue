@@ -1,6 +1,6 @@
 <template>
 	<NuxtLayout name="screen" title="Career" back="/setup/nickname" :next="nextPage">
-		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-10"></div>
+		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-10 top-0 left-0"></div>
 		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full mx-6">
 			<div class="items-center relative w-full">
