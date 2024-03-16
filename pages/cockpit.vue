@@ -1,9 +1,9 @@
 <template>
   <NuxtLayout name="screen">
-    <UiCol class="absolute z-20 items-center top-[80px] left-0 right-0">
-      <h3>{{ player.nickname }}</h3>
-      <img :src="`/characters/${player.face}.png`" class="w-[80px] rounded-full border-2 border-cyan-500" />
-    </UiCol>
+    <UiRow class="absolute z-20 items-center top-0 left-0 right-0 bg-black bg-opacity-70 py-2 px-2">
+      <h3>MARS XII</h3>
+      <img :src="`/characters/${player.face}.png`" class="w-[80px] rounded-full absolute top-2 right-2 shadow-lg border-2 border-white" />
+    </UiRow>
 
     <!-- cockpit top-->
     <div class="w-full absolute z-10 -top-[130px] left-0">
