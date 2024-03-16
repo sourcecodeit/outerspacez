@@ -10,14 +10,14 @@
 						<MazBtn color="transparent" @click="prev" noPadding>
 							<Icon name="tabler:square-rounded-chevrons-left-filled" size="40" />
 						</MazBtn>
-						<SetupShip :index="index + 1" :locked="isLocked" />
+						<SetupShip :index="index" :locked="!ship.unlocked" />
 						<MazBtn color="transparent" @click="next" noPadding>
 							<Icon name="tabler:square-rounded-chevrons-right-filled" size="40" />
 						</MazBtn>
 					</UiRow>
 				</UiRow>
 			</div>
-			<h2 class="text-3xl -mt-5">{{ ships[index].name }}</h2>
+			<h2 class="text-3xl -mt-5">{{ ship.name }}</h2>
 			<UiCol class="border border-cyan-800 rounded-lg py-4 justify-around bg-black bg-opacity-50 gap-10">
 				<div class="grid grid-cols-2">
 					<div class="gap-2 justify-center flex items-center">
@@ -73,16 +73,18 @@ onMounted(() => {
 	});
 })
 
+const ship = computed(() => {
+	return ships.value[index.value]
+})
+
 const isLocked = computed(() => {
-	return index.value > 2
+	return !ship.value.unlocked
 })
 
 function next() {
-	console.log(index.value, (index.value + 1) % ships.value.length)
 	index.value = (index.value + 1) % ships.value.length
 }
 function prev() {
-	console.log(index.value, (index.value + ships.value.length - 1) % ships.value.length)
 	index.value = (index.value + ships.value.length - 1) % ships.value.length
 }
 

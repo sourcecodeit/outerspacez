@@ -9,7 +9,7 @@
 					<MazBtn color="transparent" @click="prev" noPadding>
 						<Icon name="tabler:square-rounded-chevrons-left-filled" size="40" />
 					</MazBtn>
-					<SetupFace :index="index" />
+					<SetupFace :index="index" size="big" />
 					<MazBtn color="transparent" @click="next" noPadding>
 						<Icon name="tabler:square-rounded-chevrons-right-filled" size="40" />
 					</MazBtn>

@@ -7,7 +7,8 @@ export const useShips = () => {
       "hull": "4",
       "cargo": "24",
       "weapon_slots": "1",
-      "shield_slots": "1"
+      "shield_slots": "1",
+      "unlocked": true
     },
     {
       "id": "2",
@@ -16,7 +17,8 @@ export const useShips = () => {
       "hull": "8",
       "cargo": "24",
       "weapon_slots": "1",
-      "shield_slots": "1"
+      "shield_slots": "1",
+      "unlocked": true
     },
     {
       "id": "3",
@@ -25,7 +27,8 @@ export const useShips = () => {
       "hull": "6",
       "cargo": "24",
       "weapon_slots": "1",
-      "shield_slots": "1"
+      "shield_slots": "1",
+      "unlocked": true
     },
     {
       "id": "4",
@@ -34,7 +37,8 @@ export const useShips = () => {
       "hull": "18",
       "cargo": "32",
       "weapon_slots": "2",
-      "shield_slots": "2"
+      "shield_slots": "2",
+      "unlocked": false
     },
     {
       "id": "5",
@@ -43,7 +47,8 @@ export const useShips = () => {
       "hull": "18",
       "cargo": "26",
       "weapon_slots": "2",
-      "shield_slots": "3"
+      "shield_slots": "3",
+      "unlocked": false
     },
     {
       "id": "6",
@@ -52,7 +57,8 @@ export const useShips = () => {
       "hull": "16",
       "cargo": "24",
       "weapon_slots": "3",
-      "shield_slots": "2"
+      "shield_slots": "2",
+      "unlocked": false
     },
     {
       "id": "7",
@@ -61,7 +67,8 @@ export const useShips = () => {
       "hull": "22",
       "cargo": "34",
       "weapon_slots": "3",
-      "shield_slots": "2"
+      "shield_slots": "2",
+      "unlocked": false
     },
     {
       "id": "8",
@@ -70,7 +77,8 @@ export const useShips = () => {
       "hull": "40",
       "cargo": "44",
       "weapon_slots": "3",
-      "shield_slots": "3"
+      "shield_slots": "3",
+      "unlocked": false
     },
     {
       "id": "9",
@@ -79,7 +87,8 @@ export const useShips = () => {
       "hull": "32",
       "cargo": "44",
       "weapon_slots": "4",
-      "shield_slots": "2"
+      "shield_slots": "2",
+      "unlocked": false
     },
     {
       "id": "10",
@@ -88,7 +97,8 @@ export const useShips = () => {
       "hull": "38",
       "cargo": "50",
       "weapon_slots": "3",
-      "shield_slots": "3"
+      "shield_slots": "3",
+      "unlocked": false
     },
     {
       "id": "11",
@@ -97,7 +107,8 @@ export const useShips = () => {
       "hull": "44",
       "cargo": "46",
       "weapon_slots": "2",
-      "shield_slots": "4"
+      "shield_slots": "4",
+      "unlocked": false
     },
     {
       "id": "12",
@@ -106,7 +117,8 @@ export const useShips = () => {
       "hull": "54",
       "cargo": "66",
       "weapon_slots": "3",
-      "shield_slots": "4"
+      "shield_slots": "4",
+      "unlocked": false
     },
     {
       "id": "13",
@@ -115,7 +127,8 @@ export const useShips = () => {
       "hull": "48",
       "cargo": "72",
       "weapon_slots": "2",
-      "shield_slots": "5"
+      "shield_slots": "5",
+      "unlocked": false
     },
     {
       "id": "14",
@@ -124,7 +137,8 @@ export const useShips = () => {
       "hull": "60",
       "cargo": "74",
       "weapon_slots": "1",
-      "shield_slots": "7"
+      "shield_slots": "7",
+      "unlocked": false
     },
     {
       "id": "15",
@@ -133,7 +147,8 @@ export const useShips = () => {
       "hull": "66",
       "cargo": "62",
       "weapon_slots": "4",
-      "shield_slots": "4"
+      "shield_slots": "4",
+      "unlocked": false
     },
     {
       "id": "16",
@@ -142,7 +157,8 @@ export const useShips = () => {
       "hull": "78",
       "cargo": "80",
       "weapon_slots": "4",
-      "shield_slots": "5"
+      "shield_slots": "5",
+      "unlocked": false
     },
     {
       "id": "17",
@@ -151,7 +167,8 @@ export const useShips = () => {
       "hull": "64",
       "cargo": "90",
       "weapon_slots": "3",
-      "shield_slots": "6"
+      "shield_slots": "6",
+      "unlocked": false
     }
   ])
 }
