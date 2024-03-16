@@ -1,8 +1,11 @@
 <template>
   <NuxtLayout name="screen">
     <UiRow class="absolute z-20 items-center top-0 left-0 right-0 bg-black bg-opacity-70 py-2 px-2">
-      <h3>MARS XII</h3>
-      <img :src="`/characters/${player.face}.png`" class="w-[80px] rounded-full absolute top-2 right-2 shadow-lg border-2 border-white" />
+      <h3 class="text-sm text-cyan-300">1.000£</h3>
+      <h3 class="text-sm absolute left-0 top-2 right-0 text-center">MARS XII</h3>
+      <h3></h3>
+      <img :src="`/characters/${player.face}.png`"
+        class="w-[80px] rounded-full absolute top-2 right-2 shadow-lg border-2 border-white" />
     </UiRow>
 
     <!-- cockpit top-->
