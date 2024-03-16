@@ -22,8 +22,9 @@
 					<h3 class="text-xs opacity-65">Nickname</h3>
 				</div>
 			</UiCol>
-			<UiCol class="px-6">
-				<div class="relative h-[46px] flex flex-col justify-center">
+			<div class="h-[100px]"></div>
+			<UiCol class="px-6 absolute bottom-6 left-0 right-0">
+				<div class="relative h-[50px] flex flex-col justify-center">
 					<img src="@/assets/ui/button-bg.png" class="w-full h-full object-fill absolute top-0 right-0" />
 					CONFIRM
 				</div>
