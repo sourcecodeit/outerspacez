@@ -1,6 +1,6 @@
 <template>
 	<NuxtLayout name="screen" :next="next" title="Nickname">
-		<UiCol class="mx-8">
+		<UiCol class="mx-8 gap-4 pb-20">
 			<label>Enter your battle name:</label>
 			<input type="text" v-model="nickname" />
 		</UiCol>

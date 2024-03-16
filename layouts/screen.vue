@@ -1,24 +1,26 @@
 <template>
-	<UiCol class="screen">
-		<UiRow class="mx-6 h-[50px] relative z-40">
-			<div class="w-[60px]">
-				<MazBtn color="transparent" :to="back" noPadding v-if="back">
+	<ClientOnly>
+		<UiCol class="screen">
+			<UiRow class="mx-6 h-[50px] relative z-40">
+				<div class="w-[60px]">
+					<MazBtn color="transparent" :to="back" noPadding v-if="back">
 						<img src="@/assets/ui/chevron.png" class="w-[10px] rotate-180" />
-				</MazBtn>
-			</div>
-			<h2>
-				{{ title }}
-			</h2>
-			<div class="w-[60px]">
-				<NuxtLink :href="next">
-					<img src="@/assets/ui/arrow-next-box.png" v-if="next" />
-				</NuxtLink>
-			</div>
-		</UiRow>
-		<UiCol class="justify-around h-full">
-			<slot />
+					</MazBtn>
+				</div>
+				<h2>
+					{{ title }}
+				</h2>
+				<div class="w-[60px]">
+					<NuxtLink :href="next">
+						<img src="@/assets/ui/arrow-next-box.png" v-if="next" />
+					</NuxtLink>
+				</div>
+			</UiRow>
+			<UiCol class="justify-around h-full">
+				<slot />
+			</UiCol>
 		</UiCol>
-	</UiCol>
+	</ClientOnly>
 </template>
 <script setup>
 defineProps(['next', 'title', 'back'])

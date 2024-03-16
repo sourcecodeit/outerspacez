@@ -18,7 +18,7 @@
 				</UiRow>
 			</div>
 			<h2 class="text-3xl -mt-5">{{ ships[index].name }}</h2>
-			<UiCol class="border border-cyan-900 rounded-lg py-4 justify-around bg-black bg-opacity-15 gap-10">
+			<UiCol class="border border-cyan-800 rounded-lg py-4 justify-around bg-black bg-opacity-50 gap-10">
 				<div class="grid grid-cols-2">
 					<div class="gap-2 justify-center flex items-center">
 						<img src="@/assets/ui/shield-slots.svg" class="w-[40px]" />
