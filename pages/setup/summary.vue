@@ -3,14 +3,14 @@
 		<template v-if="hasShip && hasFace">
 			<div id="particles-js" class="absolute w-screen h-screen z-0 opacity-20 top-0 left-0"></div>
 			<div class="items-center relative flex justify-center z-20">
-				<img src="@/assets/ui/modal.png" class="absolute z-0 top-0 left-[50%] w-[240px] -ml-[120px]" />
+				<img src="@/assets/ui/modal.png" class="absolute z-0 top-[20px] left-[50%] w-[280px] -ml-[140px]" />
 				<div v-if="hasFace"
 					class="border-cyan-500 border-opacity-50 rounded-full overflow-hidden border-[4px] absolute top-0 right-10 z-30">
 					<div class="bg-gradient-to-r from-cyan-500">
 						<img :src="`/characters/${faceIndex}.png`" class="w-[80px] h-[80px] object-cover" />
 					</div>
 				</div>
-				<SetupShip :index="shipIndex + 1" v-if="hasShip" class="w-[260px]" />
+				<SetupShip :index="shipIndex + 1" v-if="hasShip" class="w-[90%]" />
 			</div>
 			<UiCol class="gap-5">
 				<div>
