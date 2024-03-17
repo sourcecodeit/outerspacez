@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="screen">
-    <UiRow class="absolute z-20 items-center top-0 left-0 right-0 bg-black bg-opacity-70 py-2 px-2">
+    <UiRow class="absolute z-30 items-center top-0 left-0 right-0 bg-black bg-opacity-70 py-2 px-2">
       <h3 class="text-sm text-cyan-300">1.000£</h3>
       <h3 class="text-sm absolute left-0 top-2 right-0 text-center">MARS XII</h3>
       <h3></h3>
@@ -8,19 +8,31 @@
         class="w-[80px] rounded-full absolute top-2 right-2 shadow-lg border-2 border-white" />
     </UiRow>
 
+    <!-- planet -->
+    <div class="w-full absolute z-0 top-[20%] left-0">
+      <img src="/planets/1.png" class="w-[150%] max-w-[2000px]" />
+    </div>
+
     <!-- cockpit top-->
-    <div class="w-full absolute z-10 -top-[130px] left-0">
+    <div class="w-full absolute z-20 -top-[130px] left-0">
       <img src="@/assets/ship/cockpit-top.png" class="w-full" />
     </div>
 
-    <!-- planet -->
-    <div class="w-full absolute z-0 top-[20%] left-0">
-      <img src="/planets/1.png" class="w-[200%] max-w-[2000px]" />
-    </div>
+    <div id="glass" class="w-screen h-screen absolute z-10 top-0 left-0"></div>
 
     <!-- cockpit bottom-->
-    <div class="w-full absolute z-10 -bottom-[100px] left-0">
+    <div class="w-full absolute z-20 -bottom-[60px] left-0">
       <img src="@/assets/ship/cockpit-bottom.png" class="w-full" />
+    </div>
+
+    <!-- tabs -->
+    <div
+      class="w-full flex items-center justify-around absolute z-30 bottom-0 left-0 right-0 h-[60px] bg-black bg-opacity-90 border-t-2 border-white border-opacity-10">
+      <SvgoCockpit class="text-4xl text-white" />
+      <SvgoChart class="text-4xl text-white opacity-45" />
+      <SvgoShipyard class="text-4xl text-white opacity-45" />
+      <SvgoUser class="text-4xl text-white opacity-45" />
+      <SvgoOptions class="text-4xl text-white opacity-45" />
     </div>
   </NuxtLayout>
 </template>
@@ -28,3 +40,9 @@
 <script setup>
 const player = usePlayer()
 </script>
+
+<style scoped>
+#glass {
+  background: linear-gradient(159.71deg, rgba(0, 0, 0, 0.25) 2.83%, rgba(100, 242, 242, 0.23) 91.97%);
+}
+</style>

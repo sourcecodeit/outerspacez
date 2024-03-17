@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="94px" viewBox="0 0 95 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shipyard</title>
+    <defs>
+        <path d="M2.0305332,27 C2.0305332,13.2316312 13.2316312,2.0305332 27,2.0305332 C40.7683688,2.0305332 51.9694668,13.2316312 51.9694668,27 C51.9694668,40.7683688 40.7683688,51.9694668 27,51.9694668 C13.2316312,51.9694668 2.0305332,40.7683688 2.0305332,27 Z M0,27 C0,41.8878694 12.1121306,54 27,54 C41.8878694,54 54,41.8878694 54,27 C54,12.1121306 41.8878694,0 27,0 C12.1121306,0 0,12.1121306 0,27 Z" id="path-1"></path>
+        <filter x="-55.6%" y="-55.6%" width="211.1%" height="211.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Dashboard-Copy-8" transform="translate(-129.000000, -1243.000000)">
+            <g id="Buttons" transform="translate(0.000000, 1246.000000)">
+                <g id="shipyard" transform="translate(149.799321, 17.000000)">
+                    <g id="Page-1-Copy-10">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Page-1" transform="translate(15.200679, 10.000000)" stroke="#FFFFFF" stroke-width="2">
+                        <polygon id="Fill-2" points="11.5 0 0 15.359605 0 29 4.3952976 24.4468577 18.6065449 24.4468577 23 29 23 15.359605"></polygon>
+                    </g>
+                    <rect id="Rectangle-8" fill="#FFFFFF" x="25.2006788" y="21" width="3" height="12.4499998"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

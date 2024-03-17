@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['~/assets/main.css'],
   app: {
     head: {
@@ -15,7 +15,8 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
     'maz-ui/nuxt',
-    'nuxt-icon'
+    'nuxt-icon',
+    'nuxt-svgo'
   ],
   postcss: {
     plugins: {
