@@ -1,5 +1,8 @@
 <template>
-	<NuxtLayout name="screen" title="Career" back="/setup/nickname" :next="nextPage">
+	<NuxtLayout name="screen" title="Career" back="/setup/nickname">
+		<template #bar-right>
+			<UiNext v-if="availablePoints == 0" @click="nextScreen()" />
+		</template>
 		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-10 top-0 left-0"></div>
 		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full mx-6">
@@ -9,7 +12,7 @@
 					<MazBtn color="transparent" @click="prev" noPadding>
 						<Icon name="tabler:square-rounded-chevrons-left-filled" size="40" />
 					</MazBtn>
-					<SetupFace :index="index" size="big" />
+					<SetupFace :index="faceIndex" size="big" />
 					<MazBtn color="transparent" @click="next" noPadding>
 						<Icon name="tabler:square-rounded-chevrons-right-filled" size="40" />
 					</MazBtn>
@@ -17,49 +20,39 @@
 			</div>
 			<p class="uppercase">Available points: {{ availablePoints }}</p>
 			<div class="grid grid-cols-2 gap-x-4 gap-y-3 mx-6">
-				<SetupStat title="Body strength" v-model="stats.str" :max="maxStr" />
-				<SetupStat title="Intelligence" v-model="stats.int" :max="maxInt" />
-				<SetupStat title="Knowledge" v-model="stats.knw" :max="maxKnw" />
-				<SetupStat title="Multilingualism" v-model="stats.lng" :max="maxLng" />
+				<SetupStat title="Pilot" v-model="stats.pilot" :max="maxPilot" />
+				<SetupStat title="Hacker" v-model="stats.engineer" :max="maxEngineer" />
+				<SetupStat title="Engineer" v-model="stats.hacker" :max="maxHacker" />
+				<SetupStat title="Trader" v-model="stats.trader" :max="maxTrader" />
 			</div>
 		</UiCol>
 		<div></div>
 	</NuxtLayout>
 </template>
 <script setup>
-import { useStorage } from '@vueuse/core'
-const nickname = useStorage('nickname')
-const index = useStorage('face', () => 1)
+const g = useGame()
+const game = await g.loadJSON()
+const faceIndex = ref(game.player.faceIndex)
 
-const stats = useStorage('stats', () => {
-	return {
-		str: 1,
-		int: 1, 
-		knw: 1,
-		lng: 1
-	}
-})
-
-const nextPage = computed(() => {
-	return availablePoints.value == 0 ? '/setup/ship' : null
-})
-
-const maxStr = computed(() => {
-	return stats.value.str + availablePoints.value
-})
-const maxInt = computed(() => {
-	return stats.value.int + availablePoints.value
-})
-const maxLng = computed(() => {
-	return stats.value.lng + availablePoints.value
-})
-const maxKnw = computed(() => {
-	return stats.value.knw + availablePoints.value
-})
+const stats = ref({...game.player.stats})
 
 const availablePoints = computed(() => {
-	return 20 - stats.value.int - stats.value.knw - stats.value.lng - stats.value.str
+	return 20 - stats.value.engineer - stats.value.hacker - stats.value.trader - stats.value.pilot
 })
+
+const maxPilot = computed(() => {
+	return stats.value.pilot + availablePoints.value
+})
+const maxEngineer = computed(() => {
+	return stats.value.engineer + availablePoints.value
+})
+const maxTrader = computed(() => {
+	return stats.value.trader + availablePoints.value
+})
+const maxHacker = computed(() => {
+	return stats.value.hacker + availablePoints.value
+})
+
 
 onMounted(() => {
 	particlesJS.load('particles-js', '/stars1.json', function () {
@@ -72,9 +65,15 @@ onMounted(() => {
 const count = 29
 
 function next() {
-	index.value = (index.value + 1) % (count + 1) || 1
+	faceIndex.value = (faceIndex.value + 1) % (count + 1) || 1
 }
 function prev() {
-	index.value = index.value - 1 || (count - 1)
+	faceIndex.value = faceIndex.value - 1 || (count - 1)
+}
+
+async function nextScreen() {
+	await g.setStats({ ...stats.value })
+	await g.setFaceIndex(faceIndex.value)
+	useRouter().push('/setup/ship')
 }
 </script>

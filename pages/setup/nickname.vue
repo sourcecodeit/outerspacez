@@ -1,5 +1,8 @@
 <template>
-	<NuxtLayout name="screen" :next="next" title="Nickname">
+	<NuxtLayout name="screen" title="Nickname">
+		<template #bar-right>
+			<UiNext v-if="nickname" @click="next()" />
+		</template>
 		<UiCol class="mx-8 gap-4 pb-20">
 			<label>Enter your battle name:</label>
 			<input type="text" v-model="nickname" />
@@ -7,11 +10,13 @@
 	</NuxtLayout>
 </template>
 <script setup>
-import { useStorage } from '@vueuse/core'
+const g = useGame()
+const game = await g.load()
+console.log(game.toJSON())
+const nickname = ref(game.toJSON().player.nickname)
 
-const nickname = useStorage('nickname')
-
-const next = computed(() => {
-	return nickname.value ? '/setup/career' : null
-})
+function next() {
+	g.setNickname(nickname.value)
+	useRouter().push('/setup/career')
+}
 </script>

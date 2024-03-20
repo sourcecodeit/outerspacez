@@ -11,9 +11,7 @@
 					{{ title }}
 				</h2>
 				<div class="w-[60px]">
-					<NuxtLink :href="next">
-						<img src="@/assets/ui/arrow-next-box.png" v-if="next" />
-					</NuxtLink>
+					<slot name="bar-right" />
 				</div>
 			</UiRow>
 			<UiCol class="justify-around h-full">

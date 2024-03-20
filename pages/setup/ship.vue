@@ -1,5 +1,8 @@
 <template>
-	<NuxtLayout name="screen" title="Ship selection" back="/setup/career" :next="nextPage">
+	<NuxtLayout name="screen" title="Ship selection" back="/setup/career">
+		<template #bar-right>
+			<UiNext @click="nextScreen()" />
+		</template>
 		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-20 top-0 left-0"></div>
 		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full mx-6">
@@ -21,12 +24,12 @@
 			<UiCol class="border border-cyan-800 rounded-lg py-4 justify-around bg-black bg-opacity-50 gap-10">
 				<div class="grid grid-cols-2">
 					<div class="gap-2 justify-center flex items-center">
-						<img src="@/assets/ui/shield-slots.svg" class="w-[40px]" />
+						<SvgoShieldSlots filled class="text-4xl" />
 						<h2 class="text-3xl">{{ shield_slots }}</h2>
 						<h3 class="text-xs opacity-80">Shield<br />slots</h3>
 					</div>
 					<div class="gap-2 justify-center flex items-center">
-						<img src="@/assets/ui/weapon-slots.svg" class="w-[30px]" />
+						<SvgoWeaponSlots filled class="text-4xl" />
 						<h2 class="text-3xl">{{ weapon_slots }}</h2>
 						<h3 class="text-xs opacity-80">Weapon<br />slots</h3>
 					</div>
@@ -61,11 +64,11 @@
 	</NuxtLayout>
 </template>
 <script setup>
-import { useStorage } from '@vueuse/core'
-
+const g = useGame()
+const game = await g.loadJSON()
 const ships = useShips()
 
-const index = useStorage('ship', () => 0)
+const index = ref(game.player.shipIndex)
 
 onMounted(() => {
 	particlesJS.load('particles-js', '/stars1.json', function () {
@@ -88,10 +91,6 @@ function prev() {
 	index.value = (index.value + ships.value.length - 1) % ships.value.length
 }
 
-const nextPage = computed(() => {
-	return isLocked.value ? null : '/setup/summary'
-})
-
 const agi = computed(() => {
 	return isLocked.value ? '?' : ships.value[index.value].agi
 })
@@ -111,4 +110,9 @@ const shield_slots = computed(() => {
 const weapon_slots = computed(() => {
 	return isLocked.value ? '?' : ships.value[index.value].weapon_slots
 })
+
+async function nextScreen() {
+	await g.setShipIndex(index.value)
+	useRouter().push('/setup/summary')
+}
 </script>
