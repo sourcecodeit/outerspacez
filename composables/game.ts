@@ -14,10 +14,6 @@ export const useGame = () => {
   const { $db } = useNuxtApp()
   const db = $db as RxDatabase
 
-  function save(game:Game) {
-    // serialized.value = JSON.stringify(game)
-  }
-
   async function setNickname(nickname: string) {
     const game = await load()
     await game.patch({      
@@ -56,7 +52,6 @@ export const useGame = () => {
         stats
       }      
     })
-    await save(game)
   }
   
   async function load() {
@@ -66,7 +61,13 @@ export const useGame = () => {
 
   async function loadJSON() {
     const game = await db.games.find().exec()
-    return game[0].toJSON()
+    return game[0].toJSON() as Game
+  }
+
+  async function getPlayerPlanet() {
+    const game = await loadJSON()
+    const coordinates = game.player.coordinates
+    return game.space?.galaxies[coordinates[0]].systems[coordinates[1]].planets[coordinates[2]]
   }
 
   async function start() {  
@@ -84,6 +85,7 @@ export const useGame = () => {
         money: 1000,
         shipIndex: 0,
         faceIndex: 0,
+        coordinates: [0, 0, 0],
         stats: {
           pilot: 0,
           hacker: 0,
@@ -101,5 +103,5 @@ export const useGame = () => {
     return game
   }  
 
-  return { start, load, loadJSON, setNickname, setStats, setFaceIndex, setShipIndex }
+  return { start, load, loadJSON, setNickname, setStats, setFaceIndex, setShipIndex, getPlayerPlanet }
 } 

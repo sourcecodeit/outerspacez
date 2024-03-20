@@ -9,5 +9,6 @@ export type Player = {
 	money: number,
 	shipIndex: number,
 	faceIndex: number,
-	stats: PlayerStats
+	stats: PlayerStats,
+	coordinates: number[]
 }
