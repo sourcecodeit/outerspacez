@@ -11,7 +11,7 @@
 
     <!-- planet -->
     <div class="w-full absolute z-0 top-[20%] left-0">
-      <img :src="`/planets/${planet.imageindex + 1}.png`" class="w-[150%] max-w-[2000px]" />
+      <img :src="`/planets/${planet.imageindex + 1}.png`" class="w-[150%] max-w-[2000px] planet" />
     </div>
 
     <!-- cockpit top-->
