@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="app overflow-hidden" :class="{
+		<div class="app overflow-hidden w-screen h-screen" :class="{
 	'hidden': !ready		
 	}">
 			<NuxtPage />
@@ -19,6 +19,7 @@ const c = ref(0)
 
 const characters = 29;
 const ships = 17;
+const stars = 3;
 
 const images = []
 
@@ -37,6 +38,10 @@ onMounted(async () => {
 
 	for (let i = 1; i <= ships; i++) {
 		images.push(`/ships/${i}.png`)
+	}
+
+	for (let i = 1; i <= stars; i++) {
+		images.push(`/stars/${i}.png`)
 	}
 
 	for (let i = 0; i < images.length; i++) {
