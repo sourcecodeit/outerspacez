@@ -1,13 +1,7 @@
-import { addRxPlugin, createRxDatabase, type RxDatabase } from 'rxdb';
-import { RxDBDevModePlugin } from 'rxdb/plugins/dev-mode';
-import { getRxStorageDexie } from 'rxdb/plugins/storage-dexie';
-import { gameSchema, playerSchema } from '~/schemas';
-import type { Game, PlayerStats } from "~/typings"
-
-
+import { type RxDatabase } from 'rxdb';
+import type { Game, PlayerStats, System } from "~/typings"
 
 const space = useSpace()
-// const player = usePlayer()
 
 export const useGame = () => {
 
@@ -70,6 +64,18 @@ export const useGame = () => {
     return game.space?.galaxies[coordinates[0]].systems[coordinates[1]].planets[coordinates[2]]
   }
 
+  async function getPlayerSystem() {
+    const game = await loadJSON()
+    const coordinates = game.player.coordinates
+    return game.space?.galaxies[coordinates[0]].systems[coordinates[1]] as System
+  }
+
+  async function getPlayerStar() {
+    const game = await loadJSON()
+    const coordinates = game.player.coordinates
+    return game.space?.galaxies[coordinates[0]].systems[coordinates[1]].star
+  }
+
   async function start() {  
 
     const existing = await $db.games.find().exec()    
@@ -103,5 +109,16 @@ export const useGame = () => {
     return game
   }  
 
-  return { start, load, loadJSON, setNickname, setStats, setFaceIndex, setShipIndex, getPlayerPlanet }
+  return {
+    start,
+    load,
+    loadJSON,
+    setNickname,
+    setStats,
+    setFaceIndex,
+    setShipIndex,
+    getPlayerPlanet,
+    getPlayerStar,
+    getPlayerSystem
+  }
 } 

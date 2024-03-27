@@ -1,7 +1,7 @@
 <template>
 	<ClientOnly>
 		<UiCol class="screen">
-			<UiRow class="mx-6 h-[50px] relative z-40">
+			<UiRow class="mx-6 h-[50px] relative z-40" v-if="title">
 				<div class="w-[60px]">
 					<MazBtn color="transparent" :to="back" noPadding v-if="back">
 						<img src="@/assets/ui/chevron.png" class="w-[10px] rotate-180" />

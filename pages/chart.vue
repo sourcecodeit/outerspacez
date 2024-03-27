@@ -1,17 +1,28 @@
 <template>
-  <NuxtLayout name="screen">
-    <div class="absolute w-screen h-screen top-0 left-0">
-      <img src="/stars/1.png" class="w-[200px] -bottom-[0px] -left-[40px] absolute" />
-    </div>
-
+  <NuxtLayout name="screen" :title="system.name">
+    <template v-if="ready">
+      <div id="planets" class="relative z-20 flex flex-col w-full justify-between items-end px-4">
+        <AstroPlanet v-for="p in system.planets" :planet="p" :active="planet.name == p.name" />
+      </div>
+      <div class="absolute w-screen h-screen top-0 left-0 z-0">
+        <AstroStar :index="system.star.imageIndex" />
+      </div>
+    </template>
     <!-- tabs -->
     <Tabs active='chart' />
   </NuxtLayout>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const ready = ref(false)
 const g = useGame()
 const game = await g.loadJSON()
-const player = game.player
+const system = await g.getPlayerSystem()
 const planet = await g.getPlayerPlanet()
+ready.value = true
 </script>
+<style>
+#planets {
+  height: calc(100vh - 200px);
+}
+</style>

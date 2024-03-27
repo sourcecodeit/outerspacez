@@ -4,17 +4,21 @@
 			<div></div>
 			<h1 class="text-3xl">Outer Space Z</h1>
 			<UiCol class="w-full gap-5">
-				<UiButton @click="next">start</UiButton>
-				<p class="text-xs font-sans opacity-25">Source Code SRL - Game Division</p>
+				<UiButton @click="next">start</UiButton>				
 			</UiCol>
 		</div>
 	</NuxtLayout>
 </template>
 <script setup>
-const game = useGame()
+const g = useGame()
 
-function next() {
-	game.start()
-	useRouter().push('/setup/nickname')
+async function next() {
+	const game = await g.loadJSON()
+	if (!game) {
+		await g.start()
+		useRouter().push('/setup/nickname')
+	} else {
+		useRouter().push('/cockpit')
+	}
 }
 </script>

@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         { src: '/particles.min.js' },
         { src: '/warp.min.js' }
       ]
-    }
+    }    
   },
   modules: [
     '@nuxtjs/google-fonts',
