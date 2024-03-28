@@ -77,10 +77,9 @@ export const useGame = () => {
   }
 
   async function start() {  
-
     const existing = await $db.games.find().exec()    
-    if (existing.length) {      
-      return existing[0].toJSON()
+    if (existing.length) {    
+      await existing[0].remove()
     }
 
     const spaceData = space.generate()    
