@@ -1,6 +1,6 @@
 <template>
 	<NuxtLayout name="screen" title="Summary" back="/setup/ship">
-		<div id="particles-js" class="absolute w-screen h-screen z-0 opacity-20 top-0 left-0"></div>
+		<div id="particles-js" class="absolute w-screen h-screen-min z-0 opacity-20 top-0 left-0"></div>
 		
 			<div class="items-center relative flex justify-center z-20">
 				<img src="@/assets/ui/modal.png" class="absolute z-0 top-[20px] left-[50%] w-[280px] -ml-[140px]" />

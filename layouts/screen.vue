@@ -1,6 +1,6 @@
 <template>
 	<ClientOnly>
-		<UiCol class="screen">
+		<UiCol class="screen h-screen-min">
 			<UiRow class="mx-6 h-[50px] relative z-40" v-if="title">
 				<div class="w-[60px]">
 					<MazBtn color="transparent" :to="back" noPadding v-if="back">
@@ -32,6 +32,6 @@ useHead({
 <style scoped>
 .screen {
 	background-image: url('@/assets/bg/screen2.jpg');
-	@apply bg-cover text-white text-center bg-center h-screen py-4;
+	@apply bg-cover text-white text-center bg-center py-4;
 }
 </style>

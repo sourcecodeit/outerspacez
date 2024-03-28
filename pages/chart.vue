@@ -4,7 +4,7 @@
       <div id="planets" class="relative z-20 flex flex-col w-full justify-between items-end px-4">
         <AstroPlanet v-for="p in system.planets" :planet="p" :active="planet.name == p.name" />
       </div>
-      <div class="absolute w-screen h-screen top-0 left-0 z-0">
+      <div class="absolute w-screen h-screen-min top-0 left-0 z-0">
         <AstroStar :index="system.star.imageIndex" />
       </div>
     </template>

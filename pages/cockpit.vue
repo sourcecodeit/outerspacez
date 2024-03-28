@@ -19,7 +19,7 @@
       <img src="@/assets/ship/cockpit-top.png" class="w-full" />
     </div>
 
-    <div id="glass" class="w-screen h-screen absolute z-10 top-0 left-0"></div>
+    <div id="glass" class="w-screen h-screen-min absolute z-10 top-0 left-0"></div>
 
     <!-- cockpit bottom-->
     <div class="w-full absolute z-20 -bottom-[40px] left-0">

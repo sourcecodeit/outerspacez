@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<div class="app overflow-hidden w-screen h-screen" :class="{
+		<div class="app overflow-hidden w-screen h-screen-min" :class="{
 	'hidden': !ready		
 	}">
 			<NuxtPage />
 		</div>
-		<UiCol v-if="!ready" class="app w-screen h-screen justify-center">
+		<UiCol v-if="!ready" class="app w-screen h-screen-min justify-center">
 			<p class="mb-6">Loading... {{ c }}%</p>
 			<div class="mx-10 h-[6px] bg-slate-800">
 				<div class="h-[6px] bg-cyan-400 transition-all" :style="`width: ${c}%`"></div>
@@ -60,6 +60,6 @@ onMounted(async () => {
 <style scoped>
 .app {
 	background-image: url('@/assets/bg/screen2.jpg');
-	@apply bg-cover text-white text-center bg-center h-screen;
+	@apply bg-cover text-white text-center bg-center;
 }
 </style>

@@ -3,8 +3,8 @@
 		<template #bar-right>
 			<UiNext v-if="availablePoints == 0" @click="nextScreen()" />
 		</template>
-		<div id="particles-js" class="absolute w-screen h-screen z-10 opacity-10 top-0 left-0"></div>
-		<canvas id="warp" class="absolute w-screen h-screen z-20"></canvas>
+		<div id="particles-js" class="absolute w-screen h-screen-min z-10 opacity-10 top-0 left-0"></div>
+		<canvas id="warp" class="absolute w-screen h-screen-min z-20"></canvas>
 		<UiCol class="gap-4 relative z-30 justify-around h-full mx-6">
 			<div class="items-center relative w-full">
 				<img src="@/assets/bg/hud-3.png" class="absolute z-0 opacity-20 animate-spin-slow" />

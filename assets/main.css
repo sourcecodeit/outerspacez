@@ -10,6 +10,9 @@ body {
 	overflow: hidden;
 	position: relative;
 }
+.h-screen-min {
+	height: 100svh;
+}
 .page-enter-active,
 .page-leave-active {
 	transition: all 0.4s;
