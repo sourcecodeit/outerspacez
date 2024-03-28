@@ -3,7 +3,7 @@
 		<div class="h-screen-min flex flex-col justify-between items-center p-8">
 			<div></div>
 			<h1 class="text-3xl">Outer Space Z</h1>
-			<UiCol class="w-full gap-5">
+			<UiCol class="w-full gap-1">
 				<UiButton @click="newGame">New game</UiButton>
 				<UiButton @click="continueGame" v-if="hasGame">Continue</UiButton>
 			</UiCol>

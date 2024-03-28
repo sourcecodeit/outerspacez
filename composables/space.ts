@@ -3,7 +3,7 @@ import type { Galaxy, Planet, Space, System } from "~/typings"
 
 const galaxiesCount = 3
 const maxSystemsPerGalaxy = 9
-const maxPalnetPerSystem = 7
+const maxPalnetPerSystem = 5
 const starImages = 3
 const planetImages = 18
 

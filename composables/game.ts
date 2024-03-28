@@ -55,6 +55,9 @@ export const useGame = () => {
 
   async function loadJSON() {
     const game = await db.games.find().exec()
+    if (game.length == 0) {
+      return null
+    }
     return game[0].toJSON() as Game
   }
 
