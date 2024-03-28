@@ -19,6 +19,7 @@ const c = ref(0)
 
 const characters = 29;
 const ships = 17;
+const planets = 18;
 const stars = 3;
 
 const images = []
@@ -42,6 +43,10 @@ onMounted(async () => {
 
 	for (let i = 1; i <= stars; i++) {
 		images.push(`/stars/${i}.png`)
+	}
+
+	for (let i = 1; i <= planets; i++) {
+		images.push(`/planets/${i}.png`)
 	}
 
 	for (let i = 0; i < images.length; i++) {

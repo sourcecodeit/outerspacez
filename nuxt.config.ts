@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Outer Space Z',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
       script: [
         { src: '/particles.min.js' },
         { src: '/warp.min.js' }
