@@ -41,7 +41,7 @@ const game = await g.loadJSON()
 const ships = useShips()
 const shipIndex = game.player.shipIndex
 const faceIndex = game.player.faceIndex
-const nickname = game.player.nickName
+const nickname = game.player.nickname
 
 console.log(shipIndex)
 

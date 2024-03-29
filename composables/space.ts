@@ -5,7 +5,7 @@ const galaxiesCount = 3
 const maxSystemsPerGalaxy = 9
 const maxPalnetPerSystem = 5
 const starImages = 3
-const planetImages = 18
+const planetImages = 28
 
 /*
 

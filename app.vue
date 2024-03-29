@@ -19,7 +19,7 @@ const c = ref(0)
 
 const characters = 29;
 const ships = 17;
-const planets = 18;
+const planets = 28;
 const stars = 3;
 
 const images = []

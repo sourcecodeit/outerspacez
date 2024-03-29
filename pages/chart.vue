@@ -7,26 +7,36 @@
         <AstroChartPlanet v-for="p in system.planets" :planet="p" :active="planet.name == p.name"
           @click="modalPlanet(p)" />
       </div>
-      <div class="absolute w-screen h-screen-min top-0 left-0 z-0" :class="{
-    'blur': modal
-  }">
+      <div class="absolute w-screen h-screen-min top-0 left-0 z-0">
         <AstroStar :index="system.star.imageIndex" />
       </div>
       <Transition>
-        <div class="absolute w-screen items-center py-20
-        top-0 bottom-0 left-0 z-50 bg-black bg-opacity-40 flex flex-col justify-between" v-if="modal && clickedPlanet">
-          <UiCol>
-            <AstroPlanet :planet="clickedPlanet" size="large" class="m-auto" />
-            <h2 class="text-xl">{{ clickedPlanet.name }}</h2>
-          </UiCol>
-          <UiCol class="w-full gap-1">
-            <UiButton>Continue</UiButton>
-            <UiButton @click="cancelPlanet()">Cancel</UiButton>
-          </UiCol>
 
-        </div>
       </Transition>
     </template>
+    <MazBackdrop :modelValue="modal" :persistent="true" :noCloseOnEscKey="true">
+      <div class="text-white w-screen h-screen-min items-center py-20 flex flex-col justify-between">
+        <UiCol>
+          <AstroPlanet :planet="clickedPlanet" size="large" class="m-auto" />
+          <h2 class="text-xl text-center">Travel to:
+            <span class="text-cyan-400">
+              {{ clickedPlanet.name }}
+            </span>
+          </h2>
+          <p class="flex justify-center mt-2 text-2xl gap-1 items-center">
+            <span class="text-orange-500">
+              <SvgoFlame />
+            </span>
+            <span class="text-lg">2.000</span>
+          </p>
+        </UiCol>
+        <UiCol class="w-full gap-1">
+          <UiButton>Travel</UiButton>
+          <UiButton @click="cancelPlanet()">Cancel</UiButton>
+        </UiCol>
+
+      </div>
+    </MazBackdrop>
     <!-- tabs -->
     <Tabs active='chart' />
   </NuxtLayout>
@@ -35,6 +45,7 @@
 <script setup lang="ts">
 const ready = ref(false)
 const modal = ref(false)
+const modal2 = ref(true)
 const g = useGame()
 const system = await g.getPlayerSystem()
 const planet = await g.getPlayerPlanet()
