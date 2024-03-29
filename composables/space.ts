@@ -15,6 +15,10 @@ const planetImages = 28
         - Star
         - Planet
         - Planet
+      - System
+        - Star
+        - Planet
+        - Planet
     - Galaxy
       - System
         - Star
@@ -64,7 +68,8 @@ export const useSpace = () => {
           const planet: Planet = {
             name: getLocationName(),
             imageindex: utils.randomInt(0, planetImages - 1),
-            size: utils.randomInt(1, 3)
+            size: utils.randomInt(1, 3),
+            distance: (pIdx * 1000) + utils.randomInt(10, 900)
           }          
           system.planets.push(planet)
         }

@@ -10,9 +10,6 @@
       <div class="absolute w-screen h-screen-min top-0 left-0 z-0">
         <AstroStar :index="system.star.imageIndex" />
       </div>
-      <Transition>
-
-      </Transition>
     </template>
     <MazBackdrop :modelValue="modal" :persistent="true" :noCloseOnEscKey="true">
       <div class="text-white w-screen h-screen-min items-center py-20 flex flex-col justify-between">
@@ -27,7 +24,7 @@
             <span class="text-orange-500">
               <SvgoFlame />
             </span>
-            <span class="text-lg">2.000</span>
+            <span class="text-lg">{{fuel}}</span>
           </p>
         </UiCol>
         <UiCol class="w-full gap-1">
@@ -45,11 +42,11 @@
 <script setup lang="ts">
 const ready = ref(false)
 const modal = ref(false)
-const modal2 = ref(true)
 const g = useGame()
 const system = await g.getPlayerSystem()
 const planet = await g.getPlayerPlanet()
 const clickedPlanet = ref()
+const fuel = ref()
 ready.value = true
 
 function modalPlanet(p) {
@@ -58,6 +55,8 @@ function modalPlanet(p) {
   }
   clickedPlanet.value = p
   modal.value = true 
+
+  fuel.value = p.distance - planet?.distance
 }
 
 function cancelPlanet() {  

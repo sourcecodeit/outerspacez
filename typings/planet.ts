@@ -3,10 +3,6 @@ export type Planet = {
 	imageindex: number	
 	size: number
 
-	/**
-	 * for future uses
-	 * 
-	 * satellites: Satellite[]
-	 */
-
+	// from star
+	distance: number
 }
