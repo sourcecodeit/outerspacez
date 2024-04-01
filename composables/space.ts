@@ -1,11 +1,12 @@
 import { useStorage } from '@vueuse/core'
 import type { Galaxy, Planet, Space, System } from "~/typings"
+const config = useRuntimeConfig()
 
 const galaxiesCount = 3
 const maxSystemsPerGalaxy = 9
 const maxPalnetPerSystem = 5
 const starImages = 3
-const planetImages = 28
+const planetImages = config.public.planets
 
 /*
 
@@ -64,7 +65,7 @@ export const useSpace = () => {
 
         galaxy.systems.push(system)
 
-        for (let pIdx = 0; pIdx < utils.randomInt(2, maxPalnetPerSystem); pIdx++) { 
+        for (let pIdx = 0; pIdx < utils.randomInt(3, maxPalnetPerSystem); pIdx++) { 
           const planet: Planet = {
             name: getLocationName(),
             imageindex: utils.randomInt(0, planetImages - 1),

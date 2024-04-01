@@ -7,7 +7,7 @@
 				<UiButton @click="newGame">New game</UiButton>
 				<UiButton @click="continueGame" v-if="hasGame">Continue</UiButton>
 			</UiCol>
-		</div>
+		</div>		
 	</NuxtLayout>
 </template>
 <script setup>

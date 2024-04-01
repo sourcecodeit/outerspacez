@@ -14,19 +14,23 @@
 					<slot name="bar-right" />
 				</div>
 			</UiRow>
-			<UiCol class="justify-around h-full">
+			<UiCol class="h-full" :class="{ 'justify-around': vCenter }">
 				<slot />
 			</UiCol>
 		</UiCol>
 	</ClientOnly>
 </template>
 <script setup>
-defineProps(['next', 'title', 'back'])
+const props = defineProps(['next', 'title', 'back', 'center'])
 
 useHead({
 	htmlAttrs: {
 		class: 'dark'
 	}
+})
+
+const vCenter = computed(() => {
+	return props.center != undefined || props.center === true
 })
 </script>
 <style scoped>

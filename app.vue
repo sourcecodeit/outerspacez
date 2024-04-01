@@ -14,12 +14,12 @@
 	</div>
 </template>
 <script setup>
+const config = useRuntimeConfig()
 const ready = ref(false)
 const c = ref(0)
 
 const characters = 29;
 const ships = 17;
-const planets = 28;
 const stars = 3;
 
 const images = []
@@ -45,7 +45,7 @@ onMounted(async () => {
 		images.push(`/stars/${i}.png`)
 	}
 
-	for (let i = 1; i <= planets; i++) {
+	for (let i = 1; i <= config.public.planets; i++) {
 		images.push(`/planets/${i}.png`)
 	}
 

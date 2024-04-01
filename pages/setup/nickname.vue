@@ -3,7 +3,7 @@
 		<template #bar-right>
 			<UiNext v-if="nickname" @click="next()" />
 		</template>
-		<UiCol class="mx-8 gap-4 pb-20">
+		<UiCol class="mx-8 gap-4 pt-20">
 			<label>Enter your battle name:</label>
 			<input type="text" v-model="nickname" />
 		</UiCol>

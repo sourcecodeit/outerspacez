@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: false },
   css: ['~/assets/main.css'],
+  runtimeConfig: {
+    public: {
+      planets: 30
+    }
+  },
   app: {
     head: {
       title: 'Outer Space Z',
