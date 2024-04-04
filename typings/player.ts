@@ -1,3 +1,5 @@
+import type { Spaceship } from "./spaceship"
+
 export type PlayerStats = {
 	pilot: number
 	engineer: number
@@ -10,5 +12,6 @@ export type Player = {
 	shipIndex: number,
 	faceIndex: number,
 	stats: PlayerStats,
-	coordinates: number[]
+	coordinates: number[]	
+	spaceship: Spaceship
 }

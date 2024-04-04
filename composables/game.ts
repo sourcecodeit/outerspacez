@@ -1,5 +1,6 @@
 import { type RxDatabase } from 'rxdb';
 import type { Game, PlayerStats, System } from "~/typings"
+import type { Spaceship } from '~/typings/spaceship';
 
 const space = useSpace()
 
@@ -28,7 +29,7 @@ export const useGame = () => {
     })
   }
 
-  async function setShipIndex(shipIndex: number) {
+  async function setPlayerShip(shipIndex: number) {
     const game = await load()
     await game.patch({
       player: {
@@ -85,6 +86,8 @@ export const useGame = () => {
       await existing[0].remove()
     }
 
+    const spaceships = useShips()
+
     const spaceData = space.generate()    
     const game: Game = {
       space: spaceData,
@@ -99,6 +102,10 @@ export const useGame = () => {
           hacker: 0,
           engineer: 0,
           trader: 0
+        },
+        spaceship: {
+          fuel: spaceships.value[0].fuel_max,
+          hull: spaceships.value[0].hull,
         }
       }
     }
@@ -118,7 +125,7 @@ export const useGame = () => {
     setNickname,
     setStats,
     setFaceIndex,
-    setShipIndex,
+    setShipIndex: setPlayerShip,
     getPlayerPlanet,
     getPlayerStar,
     getPlayerSystem
