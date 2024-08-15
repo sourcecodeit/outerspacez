@@ -7,7 +7,7 @@
 				<div
 					class="border-cyan-500 border-opacity-50 rounded-full overflow-hidden border-[4px] absolute top-0 right-10 z-30">
 					<div class="bg-gradient-to-r from-cyan-500">
-						<img :src="`/characters/${faceIndex + 1}.png`" class="w-[80px] h-[80px] object-cover" />
+						<img :src="`/characters/${faceIndex + 1}-min.png`" class="w-[80px] h-[80px] object-cover" />
 					</div>
 				</div>
 				<SetupShip :index="shipIndex" class="w-[90%]" />

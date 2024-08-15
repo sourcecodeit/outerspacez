@@ -5,13 +5,13 @@
       <h3 class="text-sm text-cyan-300">{{ player.money }}£</h3>
       <h3 class="text-sm absolute left-0 top-2 right-0 text-center">{{ planet.name }}</h3>
       <h3></h3>
-      <img :src="`/characters/${player.faceIndex + 1}.png`"
+      <img :src="`/characters/${player.faceIndex + 1}-min.png`"
         class="w-[80px] rounded-full absolute top-2 right-2 shadow-lg border-2 border-white" />
     </UiRow>
 
     <!-- planet -->
     <div class="w-full absolute z-0 top-[20%] left-0">
-      <img :src="`/planets/${planet.imageindex + 1}.png`" class="w-[150%] max-w-[2000px] planet" />
+      <img :src="`/planets/${planet.imageindex + 1}-min.png`" class="w-[150%] max-w-[2000px] planet" />
     </div>
 
     <!-- cockpit top-->

@@ -31,10 +31,15 @@ export const useGame = () => {
 
   async function setPlayerShip(shipIndex: number) {
     const game = await load()
+    const spaceships = useShips()
     await game.patch({
       player: {
         ...game.toJSON().player,
-        shipIndex
+        shipIndex,
+        spaceship: {
+          fuel: spaceships.value[shipIndex].fuel_max,
+          hull: spaceships.value[shipIndex].hull,
+        }
       }
     })
   }

@@ -34,19 +34,19 @@ onMounted(async () => {
 	}
 
 	for (let i = 1; i <= characters; i++) { 
-		images.push(`/characters/${i}.png`)
+		images.push(`/characters/${i}-min.png`)
 	}
 
 	for (let i = 1; i <= ships; i++) {
-		images.push(`/ships/${i}.png`)
+		images.push(`/ships/${i}-min.png`)
 	}
 
 	for (let i = 1; i <= stars; i++) {
-		images.push(`/stars/${i}.png`)
+		images.push(`/stars/${i}.png`)	
 	}
 
 	for (let i = 1; i <= config.public.planets; i++) {
-		images.push(`/planets/${i}.png`)
+		images.push(`/planets/${i}-min.png`)
 	}
 
 	for (let i = 0; i < images.length; i++) {

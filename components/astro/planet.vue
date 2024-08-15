@@ -1,5 +1,5 @@
 <template>
-  <img :src="`/planets/${planet.imageindex + 1}.png`" :style="`width: ${sizeCss};`" />
+  <img :src="`/planets/${planet.imageindex + 1}-min.png`" :style="`width: ${sizeCss};`" />
 </template>
 
 <script setup>
