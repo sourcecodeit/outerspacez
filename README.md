@@ -35,6 +35,10 @@ While *Outer Space Z* is inspired by *SpaceTrader*, it is not a direct copy or r
 
 For those interested in exploring the original *SpaceTrader*, its source code is preserved [here](https://github.com/videogamepreservation/spacetrader?tab=readme-ov-file).
 
+## Installation
+
+Read the [installation guide](./INSTALLATION.md) to get started.
+
 ## Contributing
 
 We welcome contributions from the community! Whether you're interested in coding, design, or playtesting, check out our contribution guidelines to get started.
@@ -46,7 +50,3 @@ We welcome contributions from the community! Whether you're interested in coding
 ---
 
 Thank you for checking out *Outer Space Z*! Join us in creating the next great space adventure.
-
-## Installation
-
-Read the [installation guide](./INSTALLATION.md) to get started.
