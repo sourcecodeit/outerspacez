@@ -1,3 +1,6 @@
+![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.jpg?raw=true) 
+
+
 # Outer Space Z
 
 **Outer Space Z** is a mobile game built with Nuxt 3, inspired by the classic PalmOS game "SpaceTrader." While our project takes inspiration from this legendary game, *Outer Space Z* offers a unique and modern experience with new features, gameplay mechanics, and a randomly generated universe that ensures no two games are alike.
