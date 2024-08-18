@@ -1,4 +1,4 @@
-![Banner](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/banner.jpg?raw=true) 
+![Banner](https://github.com/sourcecodeit/outerspacez/blob/main/images/banner.jpg?raw=true) 
 
 # Outer Space Z
 
@@ -22,7 +22,7 @@ In *Outer Space Z*, you step into the shoes of a space traveler in a vast, proce
 
 ## Screenshots
 
-![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.png?raw=true) 
+![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/images/outerspacez.png?raw=true) 
 
 ## Project Status
 

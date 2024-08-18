@@ -2,8 +2,8 @@
 
 In this page you can find the description of the screens of the game.
 
-![Setup screens](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/screens-setup-light.png?raw=true#gh-light-mode-only)  
-![Setup screens](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/screens-setup-dark.png?raw=true#gh-dark-mode-only)  
+![Setup screens](https://github.com/sourcecodeit/outerspacez/blob/main/images/screens-setup-light.png?raw=true#gh-light-mode-only)  
+![Setup screens](https://github.com/sourcecodeit/outerspacez/blob/main/images/screens-setup-dark.png?raw=true#gh-dark-mode-only)  
 
 ## Splash screen
 
