@@ -21,7 +21,7 @@
 				</UiRow>
 			</div>
 			<h2 class="text-3xl -mt-5">{{ ship.name }}</h2>
-			<UiCol class="border border-cyan-800 rounded-lg py-4 justify-around bg-black bg-opacity-50 gap-10">
+			<UiCol class="border border-cyan-800 py-4 justify-around bg-black bg-opacity-50 gap-10">
 				<div class="grid grid-cols-2">
 					<div class="gap-2 justify-center flex items-center">
 						<SvgoShieldSlots filled class="text-4xl" />
@@ -34,7 +34,7 @@
 						<h3 class="text-xs opacity-80">Weapon<br />slots</h3>
 					</div>
 				</div>
-				<ShipStats :agi="agi" :hull="hull" :cargo="cargo" />
+				<ShipPageStats :agi="agi" :hull="hull" :cargo="cargo" />
 			</UiCol>
 		</UiCol>
 		<div></div>
