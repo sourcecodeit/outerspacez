@@ -41,7 +41,7 @@ We welcome contributions from the community! Whether you're interested in coding
 
 ## License
 
-*Outer Space Z* is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+*Outer Space Z* is licensed under the GNU GPLv3. See the [LICENSE](./LICENSE) file for more details.
 
 ---
 
