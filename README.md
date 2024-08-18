@@ -22,7 +22,7 @@ In *Outer Space Z*, you step into the shoes of a space traveler in a vast, proce
 
 ## Screenshots
 
-![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.jpg?raw=true) 
+![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.png?raw=true) 
 
 ## Project Status
 
