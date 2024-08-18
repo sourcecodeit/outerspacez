@@ -1,4 +1,4 @@
-![Banner](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.jpg?raw=true) 
+![Banner](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/banner.jpg?raw=true) 
 
 # Outer Space Z
 
