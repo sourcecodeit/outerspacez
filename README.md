@@ -1,5 +1,4 @@
-![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.jpg?raw=true) 
-
+![Banner](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.jpg?raw=true) 
 
 # Outer Space Z
 
@@ -20,6 +19,10 @@ In *Outer Space Z*, you step into the shoes of a space traveler in a vast, proce
 - **Trade and Combat:** Engage in commerce by buying and selling goods on various planets. Choose your battles wisely; while you can attack other ships to steal their cargo, the ever-present danger of space pirates could turn the tables on you.
 - **Randomly Generated Universe:** Every game offers a fresh experience with a new universe full of uncharted territories, unpredictable encounters, and hidden secrets.
 - **AI-Generated Assets:** Enjoy the stunning visuals and immersive experience created using AI-generated assets, giving the game a unique and futuristic aesthetic.
+
+## Screenshots
+
+![Screenshots](https://github.com/sourcecodeit/outerspacez/blob/main/screenshots/outerspacez.jpg?raw=true) 
 
 ## Project Status
 
