@@ -4,7 +4,7 @@
       <div class="flex flex-col justify-start">
         <ShipTabs :current-tab="currentTab" @change-tab="onChangeTab" />
         <ShipPageShipStatsPanel v-if="currentTab == 1" />
-        <ShipPageShipFittingPanel v-if="currentTab == 2" />
+        <ShipPageFittingPanel v-if="currentTab == 2" />
       </div>
 
       <FuelHull v-if="currentTab == 1" />
